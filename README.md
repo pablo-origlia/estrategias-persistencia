@@ -11,7 +11,7 @@ que me lo indiquen.
 
 Este trabajo práctico, consta de dos instancias de código, dichas instancias son pequeñas funcionalidades que le iremos sumando a lo largo de la cursada.
 
-El trabajo práctico que vamos a realizar será una API (Application Programming Interface), Traducido: <<INTERFAZ DE PROGRAMACION DE APLICACIONES>>
+El trabajo práctico que vamos a realizar será una API (Application Programming Interface), Traducido: INTERFAZ DE PROGRAMACION DE APLICACIONES
 
 ### Primera parte
 
@@ -26,3 +26,42 @@ La tabla a crear deberá tener los siguientes campos:
 La idea es que, leyendo el código subido al repositorio puedan realizar esta nueva entidad.
 
 Repositorio: https://gitlab.com/pmarcelli/unahur_alumnos_1_2020.git
+
+### Instructivos para levantar el proyecto:
+1) clonar el código del repositorio:
+
+```git clone https://gitlab.com/pmarcelli/unahur_alumnos_1_2020.git estrategias-persistencia```
+
+2) eliminar carpeta .git
+
+```git init```
+
+```git remote add origin https://github.com/pablo-origlia/estrategias-persistencia.git```
+
+3) Entrar a estrategias-persistencia/api.
+
+```cd estrategias-persistencia/api```
+
+4) Realizar la instalación de sus dependencias.
+
+```npm install```
+
+5) Realizar la instalación de sequelize-cli
+
+```npm install sequelize-cli –-save```
+
+6) Ejecutar las migraciones -> estas son las creaciones de la base de datos.
+
+```npx sequelize db:migrate```
+
+7) Levantar la api, con la siguiente instrucción.
+
+```DEBUG=api:* npm start``` (Unix)
+
+```set DEBUG='api:*' & npm start``` (Windows)
+
+8) Ingresar por navegador a: 
+
+```http://localhost:3001/car```
+
+Deberá aparecer un array vacío hasta tanto creemos un registro en nuestra base de datos
