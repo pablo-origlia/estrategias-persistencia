@@ -28,40 +28,41 @@ La idea es que, leyendo el código subido al repositorio puedan realizar esta n
 Repositorio: https://gitlab.com/pmarcelli/unahur_alumnos_1_2020.git
 
 ### Instructivos para levantar el proyecto:
-1) clonar el código del repositorio:
 
-```git clone https://gitlab.com/pmarcelli/unahur_alumnos_1_2020.git estrategias-persistencia```
+1. clonar el código del repositorio:
 
-2) eliminar carpeta .git
+`git clone https://gitlab.com/pmarcelli/unahur_alumnos_1_2020.git estrategias-persistencia`
 
-```git init```
+2. eliminar carpeta .git
 
-```git remote add origin https://github.com/pablo-origlia/estrategias-persistencia.git```
+`git init`
 
-3) Entrar a estrategias-persistencia/api.
+`git remote add origin https://github.com/pablo-origlia/estrategias-persistencia.git`
 
-```cd estrategias-persistencia/api```
+3. Entrar a estrategias-persistencia/api.
 
-4) Realizar la instalación de sus dependencias.
+`cd estrategias-persistencia/api`
 
-```npm install```
+4. Realizar la instalación de sus dependencias.
 
-5) Realizar la instalación de sequelize-cli
+`npm install`
 
-```npm install sequelize-cli –-save```
+5. Realizar la instalación de sequelize-cli
 
-6) Ejecutar las migraciones -> estas son las creaciones de la base de datos.
+`npm install sequelize-cli –-save`
 
-```npx sequelize db:migrate```
+6. Ejecutar las migraciones -> estas son las creaciones de la base de datos.
 
-7) Levantar la api, con la siguiente instrucción.
+`npx sequelize db:migrate`
 
-```DEBUG=api:* npm start``` (Unix)
+7. Levantar la api, con la siguiente instrucción.
 
-```set DEBUG='api:*' & npm start``` (Windows)
+`DEBUG=api:* npm start` (Unix)
 
-8) Ingresar por navegador a: 
+`set DEBUG='api:*' & npm start` (Windows)
 
-```http://localhost:3001/car```
+8. Ingresar por navegador a:
+
+`http://localhost:3001/car`
 
 Deberá aparecer un array vacío hasta tanto creemos un registro en nuestra base de datos
