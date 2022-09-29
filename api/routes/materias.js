@@ -2,32 +2,30 @@ var express = require("express");
 var router = express.Router();
 var models = require("../models");
 
-router.get("/", (req, res,next) => {
-
-  models.materia.findAll({attributes: ["id","nombre","id_carrera"],
-      
-      /////////se agrega la asociacion 
-      include:[{as:'Carrera-Relacionada', model:models.carrera, attributes: ["id","nombre"]}]
-      ////////////////////////////////
-
-    }).then(materias => res.send(materias)).catch(error => { return next(error)});
-});
-
-/*router.get("/", (req, res) => {
-  console.log("Esto es un mensaje para ver en consola");
+router.get("/", (req, res, next) => {
   models.materia
     .findAll({
       attributes: ["id", "nombre", "id_carrera"],
+
+      include: [
+        {
+          as: "Carrera-Relacionada",
+          model: models.carrera,
+          attributes: ["id", "nombre"],
+        },
+      ],
     })
     .then((materias) => res.send(materias))
-    .catch(() => res.sendStatus(500));
-});*/
+    .catch((error) => {
+      return next(error);
+    });
+});
 
 router.post("/", (req, res) => {
   models.materia
     .create({
       nombre: req.body.nombre,
-      id_carrera: req.body.id_carrera
+      id_carrera: req.body.id_carrera,
     })
     .then((materia) => res.status(201).send({ id: materia.id }))
     .catch((error) => {
