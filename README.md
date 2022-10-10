@@ -260,6 +260,12 @@ Se edita `config.json` y se agrega:
   }
 ```
 
+Se debe realizar la migracion de los modelos a la base de datos determinada para pruebas:
+
+```console
+npx sequelize db:migrate --env test
+```
+
 Se crea la carpeta test, en la que se crearán el o los archivos con los test de cada una de las rutas de la api, por ejemplo `routes.test.js`.
 
 Para lanzar todos los test se ejecuta

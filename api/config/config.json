@@ -10,7 +10,7 @@
   "test": {
     "username": "root",
     "password": "root",
-    "database": "api_v1",
+    "database": "api_v1_test",
     "host": "localhost",
     "dialect": "mariadb",
     "operatorsAliases": 0
