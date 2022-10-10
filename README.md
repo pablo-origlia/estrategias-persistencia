@@ -226,3 +226,44 @@ npx sequelize db:migrate
 ```
 
 Una vez realizada la actualización de la base de datos, se deberá adicionar las rutas necesarias en la API para poder acceder a los distintos métodos para la entidad `alumno`. Para lograr este objetivo se debe generar un nuevo archivo `alumnos.js` dentro de `api/routes`, casi con la misma estructura que brinda el archivo `materias.js` en la misma ubicación.
+
+## TEST
+
+Para poder realizar test en la API, se debe instalar los paquetes que corresponden a dicha tarea.
+
+```console
+npm i jest --save-dev
+```
+
+```console
+npm i supertest --save-dev
+```
+
+Se edita el `package.json` y se agrega:
+
+```json
+    "scripts": {
+        "test": "jest"
+    }
+```
+
+Se edita `config.json` y se agrega:
+
+```json
+  "test": {
+    "username": "root",
+    "password": "root",
+    "database": "api_v1_test",
+    "host": "localhost",
+    "dialect": "mariadb",
+    "operatorsAliases": 0
+  }
+```
+
+Se crea la carpeta test, en la que se crearán el o los archivos con los test de cada una de las rutas de la api, por ejemplo `routes.test.js`.
+
+Para lanzar todos los test se ejecuta
+
+```console
+npm test
+```
