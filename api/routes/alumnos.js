@@ -2,9 +2,14 @@ var express = require("express");
 var router = express.Router();
 var models = require("../models");
 
+const DEFAULT_PAGE = 1;
+const DEFAULT_SIZE = 10;
+
 router.get("/", (req, res, next) => {
+  const page = parseInt(req.query.page) || DEFAULT_PAGE;
+  const size = parseInt(req.query.size) || DEFAULT_SIZE;
   models.alumno
-    .findAll({
+    .findAndCountAll({
       attributes: ["id", "apellido", "nombre", "dni", "id_carrera"],
       include: [
         {
@@ -13,6 +18,8 @@ router.get("/", (req, res, next) => {
           attributes: ["id", "nombre"],
         },
       ],
+      limit: size,
+      offset: (page - 1) * size,
     })
     .then((alumnos) => res.send(alumnos))
     .catch((error) => {
