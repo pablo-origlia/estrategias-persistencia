@@ -11,9 +11,21 @@ router.get("/", (req, res, next) => {
         {
           as: "Carrera-Relacionada",
           model: models.carrera,
-          attributes: ["id", "nombre"],
+          attributes: ["nombre"],
         },
-      ],
+        {
+          as: "Profesor-Relacionado",
+          model: models.profesor_materia,
+          attributes: ["id_profesor"],
+          include: [
+            {
+              as: "Profesor",
+              model: models.profesor,
+              attributes: ["apellido", "nombre","dni"]
+            }
+          ]
+        }
+      ]
     })
     .then((materias) => res.send(materias))
     .catch((error) => {
