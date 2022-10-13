@@ -186,9 +186,9 @@ router.get("/", (req, res, next) => {
 });
 ```
 
-De la misma manera se deberán adapatar los demás métodos para poner de manifiesto dicha relación.
+De la misma manera se deberán adaptar los demás métodos para poner de manifiesto dicha relación.
 
-Continuando con el ejemplo y verificando su funcionamiento, se prosigue a la implementación de la entidad `alumnos` y su relacion con la entidad `carrera`, teniendo por objetivo obtener el siguiente diagrama:
+Continuando con el ejemplo y verificando su funcionamiento, se prosigue a la implementación de la entidad `alumnos` y su relación con la entidad `carrera`, teniendo por objetivo obtener el siguiente diagrama:
 
 ```mermaid
 classDiagram
@@ -226,6 +226,219 @@ npx sequelize db:migrate
 ```
 
 Una vez realizada la actualización de la base de datos, se deberá adicionar las rutas necesarias en la API para poder acceder a los distintos métodos para la entidad `alumno`. Para lograr este objetivo se debe generar un nuevo archivo `alumnos.js` dentro de `api/routes`, casi con la misma estructura que brinda el archivo `materias.js` en la misma ubicación.
+
+
+Continuamos agregando funcionalidad, por lo que ahora implementamos de la entidad `profesor` y su relación con la entidad `materia`, teniendo por objetivo obtener el siguiente diagrama:
+
+```mermaid
+classDiagram
+
+Carrera "1"--"*" Materia
+Carrera "1"--"*" Alumno
+Materia "*"--"*" Profesor
+
+class Carrera {
+  + nombre: string
+}
+
+class Materia {
+  + nombre: string
+  + id_carrera: int
+}
+
+class Alumno {
+  + apellido: string
+  + nombre: string
+  + dni: string
+  + id_carrera: int
+}
+
+class Profesor {
+  + apellido: string
+  + nombre: string
+  + dni: string
+}
+```
+
+Para lograr esto, vamos a hacer uso del módulo `sequelize-cli` mediante el cual le vamos a indicar el nombre de la entidad y sus campos (con sus tipos):
+
+```console
+npx sequelize-cli model:generate --name profesor --attributes apellido:string,nombre:string,dni:integer
+```
+
+Este comando generará dos archivos por un lado `profesor.js` en la carpeta `api/models/` que define en objeto modelo profesor para utilizar en la aplicación y `[datetimestamp]-create-profesor.js` en la carpeta `api/migrations/` que mediante el siguiente comando impactará el modelo propuesto en la base de datos de la aplicación.
+
+```console
+npx sequelize db:migrate
+```
+
+Antes de realizar la migración, para que en la base de datos no se genere una tabla con el nombre "profesors",
+indico en models/profesor.js, que el nombre de la tabla, será `profesores`, de la siguiente manera:
+
+```javascript
+'use strict';
+module.exports = (sequelize, DataTypes) => {
+  const profesor = sequelize.define('profesor', {
+    apellido: DataTypes.STRING,
+    nombre: DataTypes.STRING,
+    dni: DataTypes.INTEGER
+  }, { tableName: "profesores" });
+    return profesor;
+};
+```
+
+Hecho esto, en `api/migrations/[datetimestamp]-create-profesor.js`, voy a hacer referencia a dicha tabla 
+como `profesores`:
+
+```javascript
+return queryInterface.createTable('profesores',...
+return queryInterface.dropTable('profesores');
+```
+
+Una vez realizada la actualización de la base de datos, se deberá adicionar las rutas necesarias en la API para poder acceder a los distintos métodos para la entidad `profesor`. Para lograr este objetivo se debe generar un nuevo archivo `profesor.js` dentro de `api/routes`.
+
+Este archivo, inicialmente tendrá un método get, para poder comprobar su funcionamiento:
+
+```javascript
+var express = require("express");
+var router = express.Router();
+var models = require("../models");
+
+router.get("/", (req, res, next) => {
+  models.profesor
+    .findAll({
+      attributes: ["id", "apellido", "nombre", "dni"],
+    })
+    .then((profesores) => res.send(profesores))
+    .catch((error) => {
+      return next(error);
+    });
+});
+
+module.exports = router;
+```
+
+En archivo `app.js` se agrega router profesores, con las siguientes líneas:
+
+```javascript
+var profesoresRouter = require("./routes/profesores");
+app.use("/prof", profesoresRouter);
+```
+
+Dado que la asociación entre los modelos materia y profesor, es del tipo M:N, se debe realizar un modelo intermedio entre ambos. Para ello crearemos y migraremos el modelo `profesor_materia` mediante la línea de comandos.
+
+```console
+npx sequelize-cli model:generate --name profesor_materia --attributes id_profesor:integer,id_materia:integer
+npx sequelize db:migrate
+```
+
+En este punto, es necesario asociar, los modelos de `profesor` y `materia`, con el modelo recién creado.
+Esta asociación la realizaremos con `hasMany`:
+
+En `models/profesor.js`
+
+```javascript
+profesor.hasMany(models.profesor_materia,  
+      {
+        as: "Materia-Relacionada", 
+        foreignKey: "id_profesor"   
+      })
+```
+
+En `models/materia.js`
+
+```javascript
+materia.hasMany(models.profesor_materia, 
+      {
+        as: "Profesor-Relacionado",  
+        foreignKey: "id_materia"  
+      })
+```
+
+También se debe asociar el modelo `profesor_materia` a los modelos `profesor` y `materia`.
+Esta asociación la realizaremos con `belongsTo`:
+
+En `models/profesor_materia.js`
+
+```javascript
+profesor_materia.associate = function(models) {
+    // associations can be defined here
+    profesor_materia.belongsTo(models.profesor, {
+      as: "Profesor",
+      foreignKey: "id_profesor",
+    }),
+    profesor_materia.belongsTo(models.materia, {
+      as: "Materia",
+      foreignKey: "id_materia",
+    })
+  };
+```
+
+En el controlador de materia en `routes/materias.js`, dentro del método get agrego esta asociación, que consiste en un include para realizar la asociación con la tabla intermedia `profesor_materia`, y dentro otro include para la asociación con `profesor`.
+`Materia` ya tenía una asociación previa con el modelo `carrera`.
+
+```javascript
+router.get("/", (req, res, next) => {
+  models.materia
+    .findAll({
+      attributes: ["id", "nombre", "id_carrera"],
+
+      include: [
+        {
+          as: "Carrera-Relacionada",
+          model: models.carrera,
+          attributes: ["nombre"],
+        },
+        {
+          as: "Profesor-Relacionado",
+          model: models.profesor_materia,
+          attributes: ["id_profesor"],
+          include: [
+            {
+              as: "Profesor",
+              model: models.profesor,
+              attributes: ["apellido", "nombre","dni"]
+            }
+          ]
+        }
+      ]
+    })
+    .then((materias) => res.send(materias))
+    .catch((error) => {
+      return next(error);
+    });
+});
+```
+
+Análogamente, realizaremos el mismo procedimiento para el controlador de `profesor`. En el método get agrego la asociación, con un include para realizar la asociación con la tabla intermedia `profesor_materia`, y dentro otro include para realizar la asociación con `materia`.
+
+```javascript
+router.get("/", (req, res, next) => {
+  models.profesor
+    .findAll({
+      attributes: ["id", "apellido", "nombre", "dni"],
+
+      include: [
+        {
+          as: "Materia-Relacionada",
+          model: models.profesor_materia,
+          attributes: ["id_materia"],
+          include: [
+            {
+              as: "Materia",
+              model: models.materia,
+              attributes: ["nombre"]
+            }
+          ]
+        }
+      ]
+    })
+    .then((profesores) => res.send(profesores))
+    .catch((error) => {
+      return next(error);
+    });
+});
+```
 
 ## TEST
 
