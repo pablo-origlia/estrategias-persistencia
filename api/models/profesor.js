@@ -6,11 +6,12 @@ module.exports = (sequelize, DataTypes) => {
     dni: DataTypes.INTEGER
   }, { tableName: "profesores" });
   profesor.associate = function(models) {
-    // associations can be defined here
-    profesor.hasMany(models.profesor_materia,   // Modelo al que pertenece
+    profesor.hasMany(models.profesor_materia,   
       {
-        as: "Materia-Relacionada",              // nombre de la relacion
-        foreignKey: "id_profesor"               // campo con el que voy a igualar 
+        as: "Materia-Relacionada",              
+        foreignKey: "id_profesor",              
+        onDelete: "cascade", 
+        hooks: true            
       })
   };
   return profesor;
