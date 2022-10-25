@@ -13,13 +13,14 @@ var profesoresRouter = require('./routes/profesores');
 var profesoresmateriasRouter = require('./routes/profesoresmaterias');
 
 var app = express();
-
-//  Configuración para Morgan y creación del stream node.log
+////// https://medium.com/@HargitaiSoma/how-to-do-logging-in-an-express-api-part-1-14991856555
+/////  https://ayuda.guebs.com/como-escribir-a-un-log-el-registro-de-tu-aplicacion-nodejs/
+/////  Configuración para Morgan y creación del stream node.log
 var fs = require('fs');
 //var util = require('util');
-var log_file = fs.createWriteStream(__dirname + '/node.log', { flags: 'a' });
-app.use(logger('tiny', { stream: log_file }));
-//
+var log_file = fs.createWriteStream(__dirname + '/logs/api-http.log', { flags: 'a' });
+app.use(logger('common', { stream: log_file }));
+/////
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -50,9 +51,10 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  //  Configuración para Morgan y creación del stream node.log
-  // Escribimos el error
+  /////  Configuración para Morgan y creación del stream node.log
+  ///// Escribimos el error
   log_file.write(err.stack);
+  /////
 
   // render the error page
   res.status(err.status || 500);

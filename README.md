@@ -511,13 +511,13 @@ Cabe señalar que adicionalmente al token de acceso se generará un token de ref
 
 ## Archivo Log
 
-Para el registro de las peticiones y respuestas HTTP se utilizo el middleware `morgan` y se redirecciono el flujo de los mensajes para un archivo llamado `node.log` para esto debemos agregar las siguientes lineas en `app.js`
+Para el registro de las peticiones y respuestas HTTP se utilizo el middleware `morgan` y se redirecciono el flujo de los mensajes para un archivo llamado `./logs/api-http.log` para esto debemos agregar las siguientes lineas en `app.js`
 
 ```javascript
 /////  Configuración para Morgan y creación del stream node.log
 var fs = require('fs');
-var log_file = fs.createWriteStream(__dirname + '/node.log', { flags: 'a' });
-app.use(logger('tiny', { stream: log_file }));
+var log_file = fs.createWriteStream(__dirname + '/logs/api-http.log', { flags: 'a' });
+app.use(logger('common', { stream: log_file }));
 /////
 ```
 
@@ -539,6 +539,21 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 ```
+
+Adicionalmente se redireccionan los mensajes que genera el modulo `Sequelize` mediante la propiedad de la configuracion `logging` en el archivo `./models/index.js` con la funcion `logHandler` y se crea el archivo `./logs/api-sql.log`
+
+```javascript
+const logStream = fs.createWriteStream('./logs/api-sql.log', { flags: 'a' });
+
+const logHandler = (msg) => {
+  console.log(msg);
+  logStream.write('[' + new Date().toUTCString() + '] ' + msg + '\n');
+};
+
+config.logging = logHandler;
+```
+
+Se puede observar que se mantuvo el comportamiento por defecto de enviar por consola todos los mensajes de las consultar. Para un mejor seguimineto de log se compuso el mensaje con un timestamp que permita cotejar los mensajes en los diferentes archivos de log del sistema.
 
 ## TEST
 
