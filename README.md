@@ -509,6 +509,37 @@ end
 
 Cabe señalar que adicionalmente al token de acceso se generará un token de refresco que se utilizará cuando expirado el tiempo de vida del token principal se deberá realizar una solicitud `POST` al endpoint `/refreshToken` con el objetivo de generar un nuevo token de acceso que permita seguir accediendo a los recursos de la API, de esta manera se evita tener token generados que puedan seguir accediendo indefinidamente a los recursos, generando otro problema de seguridad al respecto.
 
+## Archivo Log
+
+Para el registro de las peticiones y respuestas HTTP se utilizo el middleware `morgan` y se redirecciono el flujo de los mensajes para un archivo llamado `node.log` para esto debemos agregar las siguientes lineas en `app.js`
+
+```javascript
+/////  Configuración para Morgan y creación del stream node.log
+var fs = require('fs');
+var log_file = fs.createWriteStream(__dirname + '/node.log', { flags: 'a' });
+app.use(logger('tiny', { stream: log_file }));
+/////
+```
+
+Luego en la funcion de manejo de errores `app.use(function (err, req, res, next)` insertamos la siguiente linea para registrar todos los errores `log_file.write(err.stack);`
+
+```javascript
+// error handler
+app.use(function (err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  ///// Escribimos el error
+  log_file.write(err.stack);
+  /////
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render('error');
+});
+```
+
 ## TEST
 
 Para poder realizar test en la API, se debe instalar los paquetes que corresponden a dicha tarea.
