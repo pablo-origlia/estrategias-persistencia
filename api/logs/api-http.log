@@ -1,1 +1,62 @@
 ::1 - - [25/Oct/2022:14:35:53 +0000] "GET /mat HTTP/1.1" 304 -
+::1 - - [25/Oct/2022:21:16:55 +0000] "GET /alu HTTP/1.1" 304 -
+NotFoundError: Not Found
+    at C:\Users\poriglia\ep2\api\app.js:45:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\poriglia\ep2\api\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+    at SendStream.error (C:\Users\poriglia\ep2\api\node_modules\send\index.js:270:17)
+    at SendStream.onStatError (C:\Users\poriglia\ep2\api\node_modules\send\index.js:421:12)
+    at onstat (C:\Users\poriglia\ep2\api\node_modules\send\index.js:727:26)
+    at FSReqCallback.oncomplete (node:fs:206:21)::1 - - [25/Oct/2022:21:16:55 +0000] "GET /favicon.ico HTTP/1.1" 404 1156
+NotFoundError: Not Found
+    at C:\Users\poriglia\ep2\api\app.js:45:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\ep2\api\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\poriglia\ep2\api\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+    at SendStream.error (C:\Users\poriglia\ep2\api\node_modules\send\index.js:270:17)
+    at SendStream.onStatError (C:\Users\poriglia\ep2\api\node_modules\send\index.js:421:12)
+    at next (C:\Users\poriglia\ep2\api\node_modules\send\index.js:736:16)
+    at onstat (C:\Users\poriglia\ep2\api\node_modules\send\index.js:725:14)
+    at FSReqCallback.oncomplete (node:fs:206:21)::1 - - [25/Oct/2022:21:16:59 +0000] "GET /user HTTP/1.1" 404 2070
+::1 - - [25/Oct/2022:21:16:59 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [25/Oct/2022:21:17:06 +0000] "GET /user/1 HTTP/1.1" 500 21
+::1 - - [25/Oct/2022:21:17:19 +0000] "GET /user/Pablo HTTP/1.1" 500 21
+::1 - - [25/Oct/2022:21:18:17 +0000] "GET /user/Pablo HTTP/1.1" 404 9
+::1 - - [25/Oct/2022:21:18:37 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::ffff:127.0.0.1 - - [25/Oct/2022:21:30:56 +0000] "POST /user HTTP/1.1" 201 100
+::ffff:127.0.0.1 - - [25/Oct/2022:21:31:06 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:31:20 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:31:27 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:31:32 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:32:25 +0000] "POST /user HTTP/1.1" 500 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:33:20 +0000] "POST /user HTTP/1.1" 500 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:33:52 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:34:43 +0000] "POST /user HTTP/1.1" 500 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:35:50 +0000] "POST /user HTTP/1.1" 500 49
+::ffff:127.0.0.1 - - [25/Oct/2022:21:36:26 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:37:36 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:42:17 +0000] "POST /user HTTP/1.1" 500 21
+::ffff:127.0.0.1 - - [25/Oct/2022:21:43:16 +0000] "POST /user HTTP/1.1" 500 21
+::ffff:127.0.0.1 - - [25/Oct/2022:21:45:06 +0000] "POST /user HTTP/1.1" 500 21
+::ffff:127.0.0.1 - - [25/Oct/2022:21:46:04 +0000] "POST /user HTTP/1.1" 500 21
+::ffff:127.0.0.1 - - [25/Oct/2022:21:46:45 +0000] "POST /user HTTP/1.1" 409 8
+::ffff:127.0.0.1 - - [25/Oct/2022:21:49:48 +0000] "POST /user HTTP/1.1" 409 49
+::ffff:127.0.0.1 - - [25/Oct/2022:21:51:18 +0000] "POST /user HTTP/1.1" 409 49

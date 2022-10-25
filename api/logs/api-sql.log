@@ -1,1 +1,29 @@
 [Tue, 25 Oct 2022 14:35:53 GMT] Executing (default): SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera`, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM `materia` AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id`;
+[Tue, 25 Oct 2022 21:16:55 GMT] Executing (default): SELECT count(`alumno`.`id`) AS `count` FROM `alumnos` AS `alumno` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `alumno`.`id_carrera` = `Carrera-Relacionada`.`id`;
+[Tue, 25 Oct 2022 21:16:55 GMT] Executing (default): SELECT `alumno`.`id`, `alumno`.`apellido`, `alumno`.`nombre`, `alumno`.`dni`, `alumno`.`id_carrera`, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre` FROM `alumnos` AS `alumno` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `alumno`.`id_carrera` = `Carrera-Relacionada`.`id` LIMIT 0, 10;
+[Tue, 25 Oct 2022 21:17:06 GMT] Executing (default): SELECT `name`, `password` FROM `users` AS `user` WHERE `user`.`name` = '1' LIMIT 1;
+[Tue, 25 Oct 2022 21:17:19 GMT] Executing (default): SELECT `name`, `password` FROM `users` AS `user` WHERE `user`.`name` = 'Pablo' LIMIT 1;
+[Tue, 25 Oct 2022 21:18:17 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'Pablo' LIMIT 1;
+[Tue, 25 Oct 2022 21:18:37 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'poriglia' LIMIT 1;
+[Tue, 25 Oct 2022 21:30:56 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'jose' LIMIT 1;
+[Tue, 25 Oct 2022 21:30:56 GMT] Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+[Tue, 25 Oct 2022 21:31:06 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'jose' LIMIT 1;
+[Tue, 25 Oct 2022 21:31:20 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'jose' LIMIT 1;
+[Tue, 25 Oct 2022 21:31:27 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'poriglia' LIMIT 1;
+[Tue, 25 Oct 2022 21:31:32 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:32:25 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:33:20 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:33:52 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:34:43 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:35:50 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:36:26 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:37:36 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:42:17 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:43:16 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:45:06 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:46:04 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:46:45 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:46:45 GMT] Bad request: existe otro user con el mismo nombre
+[Tue, 25 Oct 2022 21:49:48 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;
+[Tue, 25 Oct 2022 21:49:48 GMT] Bad request: existe otro user con el mismo nombre
+[Tue, 25 Oct 2022 21:51:18 GMT] Executing (default): SELECT `username`, `password` FROM `users` AS `user` WHERE `user`.`username` = 'sfarias' LIMIT 1;

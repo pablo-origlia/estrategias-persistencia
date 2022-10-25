@@ -485,6 +485,8 @@ bcrypt.compare(req.body.password, user.password);
 
 Para la entidad `User` se contará con dos métodos `POST` en diferentes endpoints `/user` y `/login`, en el primero se creará el usuario con su nombre y contraseña y con el segundo mediante la autenticación del mimos se generará el token correspondienta para el acceso a los demas recusos de la API, como se describe en el siguiente esquema:
 
+Dentro del endpoint `/user`, se debe comprobar previamente que no exista ya un usuario con el mismo `username` para esto se realiza una consulta con ese criterio y en caso de hallarlo de retornara `409 Conflict` y un mensaje en el log para seguimiento.
+
 ```mermaid
 sequenceDiagram
   autonumber
@@ -509,7 +511,7 @@ end
 
 Cabe señalar que adicionalmente al token de acceso se generará un token de refresco que se utilizará cuando expirado el tiempo de vida del token principal se deberá realizar una solicitud `POST` al endpoint `/refreshToken` con el objetivo de generar un nuevo token de acceso que permita seguir accediendo a los recursos de la API, de esta manera se evita tener token generados que puedan seguir accediendo indefinidamente a los recursos, generando otro problema de seguridad al respecto.
 
-## Archivo Log
+## Sistema de Logs
 
 Para el registro de las peticiones y respuestas HTTP se utilizo el middleware `morgan` y se redirecciono el flujo de los mensajes para un archivo llamado `./logs/api-http.log` para esto debemos agregar las siguientes lineas en `app.js`
 

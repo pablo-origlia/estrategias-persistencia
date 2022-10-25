@@ -45,4 +45,7 @@ Object.keys(db).forEach((modelName) => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+// Se exporta la funcion de logging de peticiones.
+db.logHandler = logHandler;
+
 module.exports = db;
