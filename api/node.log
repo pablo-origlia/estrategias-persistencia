@@ -1,0 +1,3 @@
+GET /car 304 - - 12.920 ms
+GET /prof 304 - - 22.309 ms
+GET /alu 200 21 - 25.345 ms
