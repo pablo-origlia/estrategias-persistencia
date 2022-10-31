@@ -468,11 +468,12 @@ npx sequelize db:migrate
 
 Para contar con un grado adicional de seguridad se deberá mediante el módulo `bcrypt`, más especificamente con el método `hash` encriptar la cadena password que almacenemos en la entidad `User` para así quedar resguardada de posibles accesos no autorizados a la misma desde la base de datos.
 
-Por otro lado para poder almacenar `SALT_GEN` la cual se utilizará el método de `hash` se hará uso del módulo `dotenv` que brinda el acceso a distintas variables almacenadas en un archivo especial denominado `.env`.
+Por otro lado para poder almacenar `SALT_GEN` la cual se utilizará el método de `hash` se hará uso del módulo `dotenv` que brinda el acceso a distintas variables almacenadas en un archivo especial denominado `.env`. Adicionalmente se hara uso del módulo `helmet` que ayuda a proteger la aplicación de algunas vulnerabilidades web conocidas mediante el establecimiento correcto de cabeceras HTTP.
 
 ```console
  npm i bcrypt jsonwebtoken
  npm i --save-dev dotenv
+ npm i --save helmet
 ```
 
 ```javascript
@@ -508,6 +509,8 @@ end
 
   Browser ->> +Server: HTTP DELETE hostname/logout
 ```
+
+Para hacer uso del `accessToken` se deberá enviar el token obtenido en el `user/login` en el apartado Auth -> Bearer -> Bearer Token. En cada accion que lo requiera.
 
 Cabe señalar que adicionalmente al token de acceso se generará un token de refresco que se utilizará cuando expirado el tiempo de vida del token principal se deberá realizar una solicitud `POST` al endpoint `/refreshToken` con el objetivo de generar un nuevo token de acceso que permita seguir accediendo a los recursos de la API, de esta manera se evita tener token generados que puedan seguir accediendo indefinidamente a los recursos, generando otro problema de seguridad al respecto.
 

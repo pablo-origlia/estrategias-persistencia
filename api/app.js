@@ -1,8 +1,13 @@
+require('dotenv').config();
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
+const helmet = require('helmet');
+const tokenUtil = require('./utils/token.utils');
 
 var usersRouter = require('./routes/users');
 
@@ -22,6 +27,9 @@ var log_file = fs.createWriteStream(__dirname + '/logs/api-http.log', { flags: '
 app.use(logger('common', { stream: log_file }));
 /////
 
+// helps you secure your Express apps by setting various HTTP headers
+app.use(helmet());
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -32,12 +40,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/car', carrerasRouter);
+app.use('/car', tokenUtil.validateToken, carrerasRouter);
 app.use('/mat', materiasRouter);
 app.use('/alu', alumnosRouter);
 app.use('/prof', profesoresRouter);
 app.use('/profmat', profesoresmateriasRouter);
 
+// Crear usuario
 app.use('/user', usersRouter);
 
 // catch 404 and forward to error handler

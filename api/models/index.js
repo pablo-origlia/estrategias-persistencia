@@ -17,7 +17,7 @@ const logHandler = (msg) => {
   logStream.write('[' + new Date().toUTCString() + '] ' + msg + '\n');
 };
 
-// Se agrega la configuracion logging nueva a los parameteros de confirguracion del Sequelize.
+// Se agrega la configuracion logging nueva a los parámeteros de confirguración del Sequelize.
 config.logging = logHandler;
 
 let sequelize;
@@ -27,6 +27,7 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
+// Se recorre el directorio y cargan los modelos de cada entidad en el ORM.
 fs.readdirSync(__dirname)
   .filter((file) => {
     return file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js';
