@@ -27,23 +27,47 @@ router.get("/", (req, res, next) => {
     });
 });
 
-router.post("/", (req, res) => {
+const findAlumnoDni = (dni, { onSuccess, onNotFound, onError }) => {
   models.alumno
-    .create({
-      nombre: req.body.nombre,
-      apellido: req.body.apellido,
-      dni: req.body.dni,
-      id_carrera: req.body.id_carrera,
+    .findOne({
+      attributes: ["id", "apellido", "nombre", "dni", "id_carrera"],
+      where: { dni },
     })
-    .then((alumno) => res.status(201).send({ id: alumno.id }))
-    .catch((error) => {
-      if (error == "SequelizeUniqueConstraintError: Validation error") {
-        res.status(400).send("Bad request: existe otro alumno con el mismo nombre");
-      } else {
-        console.log(`Error al intentar insertar en la base de datos: ${error}`);
-        res.sendStatus(500);
-      }
-    });
+    .then((alumno) => (alumno ? onSuccess(alumno) : onNotFound()))
+    .catch(() => onError());
+};
+
+
+router.post("/", (req, res) => {
+  const nombre = req.body.nombre;
+  const apellido = req.body.apellido;
+  const dni = req.body.dni;
+  const id_carrera = req.body.id_carrera;
+
+  findAlumnoDni(dni, {
+    onSuccess: (alumno) => {
+      res.status(409).send('Bad request: Existe otro alumno con el mismo dni');
+    },
+    onError: () => res.sendStatus(500),
+    onNotFound: () => {
+      models.alumno
+        .create({
+          nombre: nombre,
+          apellido: apellido,
+          dni: dni,
+          id_carrera: id_carrera
+        })
+        .then((alumno) => res.status(201).send({ id: alumno.id,nombre:alumno.nombre,apellido:alumno.apellido,dni:alumno.dni,id_carrera:alumno.id_carrera }))
+        .catch((error) => {
+          if (error == "SequelizeUniqueConstraintError: Validation error") {
+            res.status(400).send("Bad request: existe otro alumno con el mismo id");
+          } else {
+            console.log(`Error al intentar insertar en la base de datos: ${error}`);
+            res.sendStatus(500);
+          }
+        });
+      },
+  });
 });
 
 const findAlumno = (id, { onSuccess, onNotFound, onError }) => {
