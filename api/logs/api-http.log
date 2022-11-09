@@ -1208,3 +1208,9 @@ NotFoundError: Not Found
 ::1 - - [09/Nov/2022:18:02:40 +0000] "GET /profmat/page=1&size=1 HTTP/1.1" 404 9
 ::1 - - [09/Nov/2022:18:02:49 +0000] "GET /profmat/page=1&size=1 HTTP/1.1" 404 9
 ::1 - - [09/Nov/2022:18:02:56 +0000] "GET /profmat/?page=1&size=1 HTTP/1.1" 200 132
+::1 - - [09/Nov/2022:22:10:04 +0000] "POST /prof HTTP/1.1" 201 9
+::1 - - [09/Nov/2022:22:14:45 +0000] "POST /prof HTTP/1.1" 201 9
+::1 - - [09/Nov/2022:22:16:18 +0000] "POST /prof HTTP/1.1" 201 9
+::1 - - [09/Nov/2022:22:27:37 +0000] "POST /prof HTTP/1.1" 201 9
+::1 - - [09/Nov/2022:22:28:22 +0000] "POST /prof HTTP/1.1" 201 9
+::1 - - [09/Nov/2022:22:32:19 +0000] "POST /prof HTTP/1.1" 201 9

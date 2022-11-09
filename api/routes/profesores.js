@@ -45,7 +45,10 @@ router.post("/", (req, res) => {
       apellido: req.body.apellido,
       dni: req.body.dni
     })
-    .then((profesor) => res.status(201).send({ id: profesor.id }))
+    .then((profesor) => {
+      models.profesor_materia.create({id_profesor: profesor.id, id_materia: req.body.id_materia});
+      res.status(201).send({ id: profesor.id })
+    })
     .catch((error) => {
       if (error == "SequelizeUniqueConstraintError: Validation error") {
         res.status(400).send("Bad request: existe otro profesor con el mismo id");
@@ -54,7 +57,7 @@ router.post("/", (req, res) => {
         res.sendStatus(500);
       }
     });
-  models.profesor_materia.create({id_profesor: profesores.id, id_materia: req.body.id_materia});
+  ;
 });
 
 const findProfesor = (id, { onSuccess, onNotFound, onError }) => {
