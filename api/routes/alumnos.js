@@ -18,6 +18,9 @@ router.get("/", (req, res, next) => {
           attributes: ["id", "nombre"],
         },
       ],
+      order: [
+        ["id", "ASC"],
+      ],
       limit: size,
       offset: (page - 1) * size,
     })

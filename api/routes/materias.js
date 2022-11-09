@@ -2,9 +2,14 @@ var express = require("express");
 var router = express.Router();
 var models = require("../models");
 
+const DEFAULT_PAGE = 1;
+const DEFAULT_SIZE = 10;
+
 router.get("/", (req, res, next) => {
+  const page = parseInt(req.query.page) || DEFAULT_PAGE;
+  const size = parseInt(req.query.size) || DEFAULT_SIZE;
   models.materia
-    .findAll({
+    .findAndCountAll({
       attributes: ["id", "nombre", "id_carrera"],
 
       include: [
@@ -25,7 +30,12 @@ router.get("/", (req, res, next) => {
             }
           ]
         }
-      ]
+      ],
+      order: [
+        ["id", "ASC"],
+      ],
+      limit: size,
+      offset: (page - 1) * size,
     })
     .then((materias) => res.send(materias))
     .catch((error) => {

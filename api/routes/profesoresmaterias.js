@@ -2,9 +2,15 @@ var express = require("express");
 var router = express.Router();
 var models = require("../models");
 
+
+const DEFAULT_PAGE = 1;
+const DEFAULT_SIZE = 10;
+
 router.get("/", (req, res) => {
+  const page = parseInt(req.query.page) || DEFAULT_PAGE;
+  const size = parseInt(req.query.size) || DEFAULT_SIZE;
   models.profesor_materia
-    .findAll({
+    .findAndCountAll({
       attributes: ["id"],
       include: [
         {
@@ -17,28 +23,17 @@ router.get("/", (req, res) => {
           model: models.materia,
           attributes: ["id","nombre"]
         }
-      ]
+      ],
+      order: [
+        ["id", "ASC"],
+      ],
+      limit: size,
+      offset: (page - 1) * size,
     })
     .then((profesoresmaterias) => res.send(profesoresmaterias))
     .catch(() => res.sendStatus(500));
 });
 
-router.post("/", (req, res) => {
-  models.profesor_materia
-    .create({
-      id_profesor: req.body.id_profesor,
-      id_materia: req.body.id_materia
-    })
-    .then((profesormateria) => res.status(201).send({ id: profesormateria.id }))
-    .catch((error) => {
-      if (error == "SequelizeUniqueConstraintError: Validation error") {
-        res.status(400).send("Bad request: existe otro registro con los mismos datos");
-      } else {
-        console.log(`Error al intentar insertar en la base de datos: ${error}`);
-        res.sendStatus(500);
-      }
-    });
-});
 
 const findProfesormateria = (id, { onSuccess, onNotFound, onError }) => {
   models.profesor_materia
@@ -56,7 +51,10 @@ const findProfesormateria = (id, { onSuccess, onNotFound, onError }) => {
           model: models.materia,
           attributes: ["id","nombre"]
         }
-      ]
+      ],
+      order: [
+        ["id", "ASC"],
+      ],
     })
     .then((profesormateria) => (profesormateria ? onSuccess(profesormateria) : onNotFound()))
     .catch(() => onError());

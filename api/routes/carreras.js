@@ -2,10 +2,20 @@ var express = require("express");
 var router = express.Router();
 var models = require("../models");
 
+const DEFAULT_PAGE = 1;
+const DEFAULT_SIZE = 10;
+
 router.get("/", (req, res) => {
+  const page = parseInt(req.query.page) || DEFAULT_PAGE;
+  const size = parseInt(req.query.size) || DEFAULT_SIZE;
   models.carrera
-    .findAll({
+    .findAndCountAll({
       attributes: ["id", "nombre"],
+      order: [
+        ["id", "ASC"],
+      ],
+      limit: size,
+      offset: (page - 1) * size,
     })
     .then((carreras) => res.send(carreras))
     .catch(() => res.sendStatus(500));
