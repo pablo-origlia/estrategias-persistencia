@@ -1,2 +1,4 @@
 node_modules
 logs
+api-http.log
+api-sql.log

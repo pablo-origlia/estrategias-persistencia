@@ -1,20 +1,19 @@
 var express = require('express');
 var router = express.Router();
-const bcrypt = require('bcrypt');
-
 var models = require('../models');
 
+const bcrypt = require('bcrypt');
 const tokenUtil = require('../utils/token.utils');
 
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
   const username = req.body.name;
-  const hashedPassword = await bcrypt.hash(req.body.password, 10);
+  const hashedPassword = await bcrypt.hash(req.body.password, parseInt(process.env.SALT_GEN));
 
   // Se busca si el nombre de usuario ya existe, en caso de no estar registrado,
   // se registra. Sino 'HTTP error 409 Conflict'.
   findUser(username, {
     onSuccess: (user) => {
-      res.status(409).send('Bad request: existe otro user con el mismo nombre');
+      res.status(409).json({ message: 'Ya existe otro usuario con el mismo nombre!' });
     },
     onError: () => res.sendStatus(500),
     onNotFound: () => {
@@ -46,71 +45,45 @@ const findUser = (username, { onSuccess, onNotFound, onError }) => {
     .catch(() => onError());
 };
 
-/*
 // Endpoint para chequear el registro de un Usuario
 router.get('/:username', (req, res) => {
   findUser(req.params.username, {
     onSuccess: (user) => res.send(user),
-    onNotFound: () => res.sendStatus(404),
+    onNotFound: () => res.status(404).json({ message: 'Usuario no registrado!' }),
     onError: () => res.sendStatus(500),
   });
 });
-*/
 
-////////// JWT Endpoints
+// JWT Endpoints con Cookies
 router.post('/login', async (req, res) => {
   const username = req.body.name;
 
   findUser(username, {
-    onSuccess: (user) => {
-      if (bcrypt.compare(req.body.password, user.password)) {
+    onSuccess: async (user) => {
+      const validPassword = await bcrypt.compare(req.body.password, user.password);
+      if (validPassword) {
         const accessToken = tokenUtil.generateAccessToken({ user: req.body.name });
 
-        const refreshToken = tokenUtil.generateRefreshToken({ user: req.body.name });
-
-        res.json({ accessToken: accessToken, refreshToken: refreshToken });
+        res
+          .cookie('accesstoken', accessToken, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+          })
+          .status(200)
+          .json({ message: 'Login exitoso!' });
       } else {
-        res.status(401).send('Password Incorrect!');
+        res.status(401).json({ message: 'Password incorrecto!' });
       }
     },
     onError: () => res.sendStatus(500),
     onNotFound: () => {
-      res.status(404).send('User does not exist!');
+      res.status(404).json({ message: 'No existe usuario!, por favor registrese.' });
     },
   });
 });
 
-//REFRESH TOKEN API
-router.post('/refreshToken', (req, res) => {
-  if (!tokenUtil.isValidRefreshToken(req.body.token)) {
-    console.log(req.body.token);
-    res.status(400).send('Refresh Token Invalid');
-  } else {
-    //if (!refreshTokens.includes(req.body.token)) res.status(400).send('Refresh Token Invalid');
-
-    //refreshTokens = refreshTokens.filter((c) => c != req.body.token);
-    tokenUtil.removeRefreshToken(req.body.token);
-    //remove the old refreshToken from the refreshTokens list
-
-    const accessToken = tokenUtil.generateAccessToken({ user: req.body.name });
-    const refreshToken = tokenUtil.generateRefreshToken({ user: req.body.name });
-    //generate new accessToken and refreshTokens
-
-    res.json({ accessToken: accessToken, refreshToken: refreshToken });
-  }
+router.delete('/logout', tokenUtil.authorization, (req, res) => {
+  return res.clearCookie('accesstoken').status(200).json({ message: 'Logout exitoso!' });
 });
-
-router.delete('/logout', (req, res) => {
-  if (!tokenUtil.isValidRefreshToken(req.body.token)) {
-    res.status(400).send('Refresh Token Invalid');
-  } else {
-    tokenUtil.removeRefreshToken(req.body.token);
-    //refreshTokens = refreshTokens.filter((c) => c != req.body.token);
-    //remove the old refreshToken from the refreshTokens list
-    res.status(204).send('Logged out!');
-  }
-});
-
-//////////
 
 module.exports = router;

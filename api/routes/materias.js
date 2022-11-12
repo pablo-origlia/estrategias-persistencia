@@ -1,39 +1,34 @@
-var express = require("express");
+var express = require('express');
 var router = express.Router();
-var models = require("../models");
+var models = require('../models');
 
-const DEFAULT_PAGE = 1;
-const DEFAULT_SIZE = 10;
-
-router.get("/", (req, res, next) => {
-  const page = parseInt(req.query.page) || DEFAULT_PAGE;
-  const size = parseInt(req.query.size) || DEFAULT_SIZE;
+router.get('/', (req, res, next) => {
+  const page = parseInt(req.query.page) || parseInt(process.env.DEFAULT_PAGE);
+  const size = parseInt(req.query.size) || parseInt(process.env.DEFAULT_SIZE);
   models.materia
     .findAndCountAll({
-      attributes: ["id", "nombre", "id_carrera"],
+      attributes: ['id', 'nombre', 'id_carrera'],
 
       include: [
         {
-          as: "Carrera-Relacionada",
+          as: 'Carrera-Relacionada',
           model: models.carrera,
-          attributes: ["nombre"],
+          attributes: ['nombre'],
         },
         {
-          as: "Profesor-Relacionado",
+          as: 'Profesor-Relacionado',
           model: models.profesor_materia,
-          attributes: ["id_profesor"],
+          attributes: ['id_profesor'],
           include: [
             {
-              as: "Profesor",
+              as: 'Profesor',
               model: models.profesor,
-              attributes: ["apellido", "nombre","dni"]
-            }
-          ]
-        }
+              attributes: ['apellido', 'nombre', 'dni'],
+            },
+          ],
+        },
       ],
-      order: [
-        ["id", "ASC"],
-      ],
+      order: [['id', 'ASC']],
       limit: size,
       offset: (page - 1) * size,
     })
@@ -43,7 +38,7 @@ router.get("/", (req, res, next) => {
     });
 });
 
-router.post("/", (req, res) => {
+router.post('/', (req, res) => {
   models.materia
     .create({
       nombre: req.body.nombre,
@@ -51,8 +46,8 @@ router.post("/", (req, res) => {
     })
     .then((materia) => res.status(201).send({ id: materia.id }))
     .catch((error) => {
-      if (error == "SequelizeUniqueConstraintError: Validation error") {
-        res.status(400).send("Bad request: existe otra materia con el mismo nombre");
+      if (error == 'SequelizeUniqueConstraintError: Validation error') {
+        res.status(400).send('Bad request: existe otra materia con el mismo nombre');
       } else {
         console.log(`Error al intentar insertar en la base de datos: ${error}`);
         res.sendStatus(500);
@@ -63,14 +58,14 @@ router.post("/", (req, res) => {
 const findMateria = (id, { onSuccess, onNotFound, onError }) => {
   models.materia
     .findOne({
-      attributes: ["id", "nombre", "id_carrera"],
+      attributes: ['id', 'nombre', 'id_carrera'],
       where: { id },
     })
     .then((materia) => (materia ? onSuccess(materia) : onNotFound()))
     .catch(() => onError());
 };
 
-router.get("/:id", (req, res) => {
+router.get('/:id', (req, res) => {
   findMateria(req.params.id, {
     onSuccess: (materia) => res.send(materia),
     onNotFound: () => res.sendStatus(404),
@@ -78,7 +73,7 @@ router.get("/:id", (req, res) => {
   });
 });
 
-router.put("/:id", (req, res) => {
+router.put('/:id', (req, res) => {
   const onSuccess = (materia) =>
     materia
       .update(
@@ -86,12 +81,12 @@ router.put("/:id", (req, res) => {
           nombre: req.body.nombre,
           id_carrera: req.body.id_carrera,
         },
-        { fields: ["nombre", "id_carrera"] }
+        { fields: ['nombre', 'id_carrera'] }
       )
       .then(() => res.sendStatus(200))
       .catch((error) => {
-        if (error == "SequelizeUniqueConstraintError: Validation error") {
-          res.status(400).send("Bad request: existe otra materia con el mismo nombre");
+        if (error == 'SequelizeUniqueConstraintError: Validation error') {
+          res.status(400).send('Bad request: existe otra materia con el mismo nombre');
         } else {
           console.log(`Error al intentar actualizar la base de datos: ${error}`);
           res.sendStatus(500);
@@ -104,7 +99,7 @@ router.put("/:id", (req, res) => {
   });
 });
 
-router.delete("/:id", (req, res) => {
+router.delete('/:id', (req, res) => {
   const onSuccess = (materia) =>
     materia
       .destroy()

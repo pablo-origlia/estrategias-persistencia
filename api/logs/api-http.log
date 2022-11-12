@@ -1214,3 +1214,1545 @@ NotFoundError: Not Found
 ::1 - - [09/Nov/2022:22:27:37 +0000] "POST /prof HTTP/1.1" 201 9
 ::1 - - [09/Nov/2022:22:28:22 +0000] "POST /prof HTTP/1.1" 201 9
 ::1 - - [09/Nov/2022:22:32:19 +0000] "POST /prof HTTP/1.1" 201 9
+::1 - - [10/Nov/2022:02:12:04 +0000] "GET /prof HTTP/1.1" 200 105
+::1 - - [10/Nov/2022:02:12:15 +0000] "GET /alu HTTP/1.1" 304 -
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:54:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+    at SendStream.error (C:\Users\poriglia\entrega\api\node_modules\send\index.js:270:17)
+    at SendStream.onStatError (C:\Users\poriglia\entrega\api\node_modules\send\index.js:421:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\send\index.js:736:16)
+    at onstat (C:\Users\poriglia\entrega\api\node_modules\send\index.js:725:14)
+    at FSReqCallback.oncomplete (node:fs:206:21)::1 - - [10/Nov/2022:02:12:21 +0000] "GET /user HTTP/1.1" 404 2150
+::1 - - [10/Nov/2022:02:12:21 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 119
+::1 - - [10/Nov/2022:02:12:39 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:02:12:56 +0000] "GET /mat HTTP/1.1" 200 593
+::ffff:127.0.0.1 - - [10/Nov/2022:02:23:45 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:23:45 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:23:45 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:23:45 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:23:45 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:23:45 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:24:35 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:24:35 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:24:36 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:24:36 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:24:36 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:24:36 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:25:16 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:25:16 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:25:16 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:25:16 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:25:16 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:25:16 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:14 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:14 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:14 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:14 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:14 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:14 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:24 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:24 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:24 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:24 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:24 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:26:24 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:27:22 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:27:22 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:27:22 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:27:22 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:27:22 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:27:22 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:29:04 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:29:04 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:02:29:04 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:02:29:04 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:02:29:04 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:02:29:04 +0000] "GET /alu HTTP/1.1" 200 127
+::1 - - [10/Nov/2022:02:35:19 +0000] "GET /mat HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:02:35:22 +0000] "GET /mat HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:02:35:54 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:02:36:02 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:02:56:06 +0000] "GET /alu HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [10/Nov/2022:03:03:46 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:03:03:46 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:03:03:46 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:03:03:46 +0000] "GET /car HTTP/1.1" 400 17
+SequelizeDatabaseError: (conn=74, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::ffff:127.0.0.1 - - [10/Nov/2022:03:03:47 +0000] "GET /mat HTTP/1.1" 500 1411
+::ffff:127.0.0.1 - - [10/Nov/2022:03:03:47 +0000] "GET /alu HTTP/1.1" 200 127
+SequelizeDatabaseError: (conn=78, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:04:24 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:04:24 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=80, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:04:35 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:04:35 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=79, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:04:37 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:04:37 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:05:09 +0000] "GET /alu HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=81, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `profesor`.*, `Materia-Relacionada`.`id` AS `Materia-Relacionada.id`, `Materia-Relacionada`.`id_materia` AS `Materia-Relacionada.id_materia`, `Materia-Relacionada->Materia`.`id` AS `Materia-Relacionada.Materia.id`, `Materia-Relacionada->Materia`.`nombre` AS `Materia-Relacionada.Materia.nombre` FROM (SELECT `profesor`.`id`, `profesor`.`apellido`, `profesor`.`nombre`, `profesor`.`dni` FROM `profesores` AS `profesor` ORDER BY `profesor`.`id` ASC LIMIT NaN, '10;') AS `profesor` LEFT OUTER JOIN `profesor_materia` AS `Materia-Relacionada` ON `profesor`.`id` = `Materia-Relacionada`.`id_profesor` LEFT OUTER JOIN `materia` AS `Materia-Relacionada->Materia` ON `Materia-Relacionada`.`id_materia` = `Materia-Relacionada->Materia`.`id` ORDER BY `profesor`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:05:14 +0000] "GET /prof HTTP/1.1" 500 2188
+::1 - - [10/Nov/2022:03:05:14 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:06:19 +0000] "GET /car HTTP/1.1" 400 17
+SequelizeDatabaseError: (conn=87, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:06:22 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:06:22 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:06:40 +0000] "GET /alu HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=93, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:07:14 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:07:14 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=96, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:07:56 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:07:56 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=95, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:07:57 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:07:57 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=99, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:08:53 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:08:53 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=98, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:08:54 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:08:54 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=99, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:08:55 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:08:55 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=98, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:08:55 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:08:55 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=99, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:08:55 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:08:55 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=98, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:08:56 +0000] "GET /mat HTTP/1.1" 500 2982
+::1 - - [10/Nov/2022:03:08:56 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:08:59 +0000] "GET /alu HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=98, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `profesor`.*, `Materia-Relacionada`.`id` AS `Materia-Relacionada.id`, `Materia-Relacionada`.`id_materia` AS `Materia-Relacionada.id_materia`, `Materia-Relacionada->Materia`.`id` AS `Materia-Relacionada.Materia.id`, `Materia-Relacionada->Materia`.`nombre` AS `Materia-Relacionada.Materia.nombre` FROM (SELECT `profesor`.`id`, `profesor`.`apellido`, `profesor`.`nombre`, `profesor`.`dni` FROM `profesores` AS `profesor` ORDER BY `profesor`.`id` ASC LIMIT NaN, '10;') AS `profesor` LEFT OUTER JOIN `profesor_materia` AS `Materia-Relacionada` ON `profesor`.`id` = `Materia-Relacionada`.`id_profesor` LEFT OUTER JOIN `materia` AS `Materia-Relacionada->Materia` ON `Materia-Relacionada`.`id_materia` = `Materia-Relacionada->Materia`.`id` ORDER BY `profesor`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:09:04 +0000] "GET /prof HTTP/1.1" 500 2188
+::1 - - [10/Nov/2022:03:09:04 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=102, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `profesor`.*, `Materia-Relacionada`.`id` AS `Materia-Relacionada.id`, `Materia-Relacionada`.`id_materia` AS `Materia-Relacionada.id_materia`, `Materia-Relacionada->Materia`.`id` AS `Materia-Relacionada.Materia.id`, `Materia-Relacionada->Materia`.`nombre` AS `Materia-Relacionada.Materia.nombre` FROM (SELECT `profesor`.`id`, `profesor`.`apellido`, `profesor`.`nombre`, `profesor`.`dni` FROM `profesores` AS `profesor` ORDER BY `profesor`.`id` ASC LIMIT NaN, '10;') AS `profesor` LEFT OUTER JOIN `profesor_materia` AS `Materia-Relacionada` ON `profesor`.`id` = `Materia-Relacionada`.`id_profesor` LEFT OUTER JOIN `materia` AS `Materia-Relacionada->Materia` ON `Materia-Relacionada`.`id_materia` = `Materia-Relacionada->Materia`.`id` ORDER BY `profesor`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:10:14 +0000] "GET /prof HTTP/1.1" 500 2190
+::1 - - [10/Nov/2022:03:10:14 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:10:17 +0000] "GET /alu HTTP/1.1" 304 -
+SequelizeDatabaseError: (conn=102, no: 1327, SQLState: 42000) Undeclared variable: NaN
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT NaN, '10;') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:10:21 +0000] "GET /mat HTTP/1.1" 500 2984
+::1 - - [10/Nov/2022:03:10:21 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:10:21 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:11:06 +0000] "GET /mat HTTP/1.1" 200 593
+SequelizeDatabaseError: (conn=108, no: 1064, SQLState: 42000) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `ma...' at line 1
+sql: SELECT `materia`.*, `Carrera-Relacionada`.`id` AS `Carrera-Relacionada.id`, `Carrera-Relacionada`.`nombre` AS `Carrera-Relacionada.nombre`, `Profesor-Relacionado`.`id` AS `Profesor-Relacionado.id`, `Profesor-Relacionado`.`id_profesor` AS `Profesor-Relacionado.id_profesor`, `Profesor-Relacionado->Profesor`.`id` AS `Profesor-Relacionado.Profesor.id`, `Profesor-Relacionado->Profesor`.`apellido` AS `Profesor-Relacionado.Profesor.apellido`, `Profesor-Relacionado->Profesor`.`nombre` AS `Profesor-Relacionado.Profesor.nombre`, `Profesor-Relacionado->Profesor`.`dni` AS `Profesor-Relacionado.Profesor.dni` FROM (SELECT `materia`.`id`, `materia`.`nombre`, `materia`.`id_carrera` FROM `materia` AS `materia` ORDER BY `materia`.`id` ASC LIMIT 0, '10') AS `materia` LEFT OUTER JOIN `carreras` AS `Carrera-Relacionada` ON `materia`.`id_carrera` = `Carrera-Relacionada`.`id` LEFT OUTER JOIN `profesor_materia` AS `Profesor-Relacionado` ON `materia`.`id` = `Profesor-Relacionado`.`id_materia` LEFT OUTER JOIN `profesores` AS `Profesor-Relacionado->Profesor` ON `Profesor-Relacionado`.`id_profesor` = `Profesor-Relacionado->Profesor`.`id` ORDER BY `materia`.`id` ASC; - parameters:[]
+    at Query.formatError (C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:285:16)
+    at C:\Users\poriglia\entrega\api\node_modules\sequelize\lib\dialects\mariadb\query.js:68:22
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)::1 - - [10/Nov/2022:03:11:43 +0000] "GET /mat HTTP/1.1" 500 3386
+::1 - - [10/Nov/2022:03:11:43 +0000] "GET /stylesheets/style.css HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:12:32 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [10/Nov/2022:03:13:33 +0000] "GET /mat HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:13:36 +0000] "GET /prof HTTP/1.1" 200 105
+::1 - - [10/Nov/2022:03:14:33 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:47 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:47 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:47 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:47 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:48 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:48 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:48 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:48 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:48 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:49 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:49 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:50 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:50 +0000] "GET /alu HTTP/1.1" 304 -
+::1 - - [10/Nov/2022:03:14:50 +0000] "GET /alu HTTP/1.1" 304 -
+::ffff:127.0.0.1 - - [10/Nov/2022:03:15:31 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:03:15:31 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [10/Nov/2022:03:15:31 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [10/Nov/2022:03:15:31 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [10/Nov/2022:03:15:31 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [10/Nov/2022:03:15:31 +0000] "GET /alu HTTP/1.1" 200 127
+::1 - - [12/Nov/2022:12:06:45 +0000] "GET /alu HTTP/1.1" 200 235
+::1 - - [12/Nov/2022:12:06:53 +0000] "GET /car HTTP/1.1" 400 17
+::1 - - [12/Nov/2022:12:06:59 +0000] "GET /mat HTTP/1.1" 200 593
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:54:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+    at SendStream.error (C:\Users\poriglia\entrega\api\node_modules\send\index.js:270:17)
+    at SendStream.onStatError (C:\Users\poriglia\entrega\api\node_modules\send\index.js:421:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\send\index.js:736:16)
+    at onstat (C:\Users\poriglia\entrega\api\node_modules\send\index.js:725:14)
+    at FSReqCallback.oncomplete (node:fs:206:21)::1 - - [12/Nov/2022:12:07:10 +0000] "GET /user HTTP/1.1" 404 2150
+::1 - - [12/Nov/2022:12:07:10 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 119
+::1 - - [12/Nov/2022:12:07:16 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:54:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7::ffff:127.0.0.1 - - [12/Nov/2022:12:18:18 +0000] "POST /login HTTP/1.1" 404 2345
+::1 - - [12/Nov/2022:12:18:18 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 119
+::ffff:127.0.0.1 - - [12/Nov/2022:12:19:22 +0000] "POST /user/login HTTP/1.1" 200 340
+::ffff:127.0.0.1 - - [12/Nov/2022:12:32:05 +0000] "POST /user/login HTTP/1.1" 200 340
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:56:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:57:14)::ffff:127.0.0.1 - - [12/Nov/2022:12:32:27 +0000] "POST /user/logout HTTP/1.1" 404 2306
+::1 - - [12/Nov/2022:12:32:27 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 119
+::ffff:127.0.0.1 - - [12/Nov/2022:12:33:30 +0000] "POST /user/login HTTP/1.1" 200 340
+::ffff:127.0.0.1 - - [12/Nov/2022:12:35:36 +0000] "POST /user/login HTTP/1.1" 500 21
+::ffff:127.0.0.1 - - [12/Nov/2022:12:36:38 +0000] "POST /user/login HTTP/1.1" 500 21
+::1 - - [12/Nov/2022:12:37:03 +0000] "GET /user/poriglia HTTP/1.1" 304 -
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:56:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at SendStream.error (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:121:7)
+    at SendStream.emit (node:events:513:28)
+    at SendStream.error (C:\Users\poriglia\entrega\api\node_modules\send\index.js:270:17)
+    at SendStream.onStatError (C:\Users\poriglia\entrega\api\node_modules\send\index.js:421:12)
+    at onstat (C:\Users\poriglia\entrega\api\node_modules\send\index.js:727:26)
+    at FSReqCallback.oncomplete (node:fs:206:21)::1 - - [12/Nov/2022:12:37:04 +0000] "GET /favicon.ico HTTP/1.1" 404 1196
+::1 - - [12/Nov/2022:12:37:04 +0000] "GET /user/poriglia HTTP/1.1" 304 -
+::1 - - [12/Nov/2022:12:37:09 +0000] "GET /mat HTTP/1.1" 304 -
+::1 - - [12/Nov/2022:12:37:23 +0000] "GET /user/login HTTP/1.1" 404 9
+::ffff:127.0.0.1 - - [12/Nov/2022:12:38:46 +0000] "POST /user/login HTTP/1.1" 200 46
+::ffff:127.0.0.1 - - [12/Nov/2022:12:39:36 +0000] "DELETE /user/logout HTTP/1.1" 200 47
+::ffff:127.0.0.1 - - [12/Nov/2022:12:48:04 +0000] "POST /user/login HTTP/1.1" 200 46
+::ffff:127.0.0.1 - - [12/Nov/2022:12:50:34 +0000] "POST /user/login HTTP/1.1" 200 46
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:56:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)::ffff:127.0.0.1 - - [12/Nov/2022:12:50:42 +0000] "POST /user/logout HTTP/1.1" 404 2305
+::1 - - [12/Nov/2022:12:50:42 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 119
+::ffff:127.0.0.1 - - [12/Nov/2022:12:50:46 +0000] "DELETE /user/logout HTTP/1.1" 200 47
+::ffff:127.0.0.1 - - [12/Nov/2022:12:51:25 +0000] "POST /user/login HTTP/1.1" 200 36
+::ffff:127.0.0.1 - - [12/Nov/2022:12:51:43 +0000] "GET /mat HTTP/1.1" 403 9
+NotFoundError: Not Found
+    at C:\Users\poriglia\entrega\api\app.js:56:8
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7::ffff:127.0.0.1 - - [12/Nov/2022:12:52:37 +0000] "POST /login HTTP/1.1" 404 2345
+::1 - - [12/Nov/2022:12:52:37 +0000] "GET /stylesheets/style.css HTTP/1.1" 200 119
+::ffff:127.0.0.1 - - [12/Nov/2022:12:52:43 +0000] "POST /user/login HTTP/1.1" 200 36
+::ffff:127.0.0.1 - - [12/Nov/2022:12:53:03 +0000] "GET /mat HTTP/1.1" 403 9
+::1 - - [12/Nov/2022:13:21:44 +0000] "GET /user/login HTTP/1.1" 404 9
+::1 - - [12/Nov/2022:13:33:26 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:13:34:49 +0000] "POST /user/register HTTP/1.1" 201 102
+::1 - - [12/Nov/2022:13:36:34 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:38:07 +0000] "GET /mat HTTP/1.1" 403 9
+::1 - - [12/Nov/2022:13:38:43 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:38:51 +0000] "GET /mat HTTP/1.1" 403 9
+::1 - - [12/Nov/2022:13:40:02 +0000] "DELETE /user/logout HTTP/1.1" 403 9
+::1 - - [12/Nov/2022:13:41:06 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:13:41:10 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:41:15 +0000] "GET /mat HTTP/1.1" 403 9
+::1 - - [12/Nov/2022:13:41:31 +0000] "DELETE /user/logout HTTP/1.1" 403 9
+::1 - - [12/Nov/2022:13:44:10 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:13:44:15 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:44:36 +0000] "GET /mat HTTP/1.1" 403 31
+::1 - - [12/Nov/2022:13:46:03 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:13:46:07 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:46:22 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:46:40 +0000] "DELETE /user/logout HTTP/1.1" 200 37
+::1 - - [12/Nov/2022:13:47:10 +0000] "GET /mat HTTP/1.1" 403 31
+::1 - - [12/Nov/2022:13:47:26 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:47:37 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:47:53 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:48:15 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:48:27 +0000] "DELETE /user/logout HTTP/1.1" 200 37
+::1 - - [12/Nov/2022:13:49:20 +0000] "GET /mat HTTP/1.1" 403 31
+::1 - - [12/Nov/2022:13:49:35 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:50:55 +0000] "GET /mat HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:13:51:48 +0000] "DELETE /user/logout HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:13:51:53 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:51:58 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:52:22 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:52:43 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:53:11 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:53:30 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:54:07 +0000] "GET /mat HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:13:54:31 +0000] "DELETE /user/logout HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:13:54:40 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:54:44 +0000] "DELETE /user/logout HTTP/1.1" 200 37
+::1 - - [12/Nov/2022:13:57:03 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:13:57:15 +0000] "POST /user/login HTTP/1.1" 200 36
+::1 - - [12/Nov/2022:13:58:12 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:13:58:16 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:13:58:23 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:13:58:30 +0000] "DELETE /user/logout HTTP/1.1" 200 30
+::1 - - [12/Nov/2022:13:58:34 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:13:59:34 +0000] "POST /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [12/Nov/2022:13:59:34 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:13:59:34 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:13:59:34 +0000] "GET /car HTTP/1.1" 400 17
+::ffff:127.0.0.1 - - [12/Nov/2022:13:59:34 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:13:59:34 +0000] "GET /alu HTTP/1.1" 200 127
+::1 - - [12/Nov/2022:14:03:17 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:14:03:28 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:14:03:34 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:14:03:38 +0000] "DELETE /user/logout HTTP/1.1" 200 30
+::1 - - [12/Nov/2022:14:03:40 +0000] "GET /mat HTTP/1.1" 403 31
+::1 - - [12/Nov/2022:14:06:15 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:14:06:19 +0000] "POST /user/login HTTP/1.1" 500 21
+::1 - - [12/Nov/2022:14:22:20 +0000] "POST /user/register HTTP/1.1" 201 102
+::1 - - [12/Nov/2022:14:22:27 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:14:22:34 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:14:22:39 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:14:22:43 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:14:22:50 +0000] "DELETE /user/logout HTTP/1.1" 200 30
+::1 - - [12/Nov/2022:14:22:54 +0000] "GET /mat HTTP/1.1" 403 31
+::1 - - [12/Nov/2022:14:28:32 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:14:28:35 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:14:28:38 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:14:28:40 +0000] "DELETE /user/logout HTTP/1.1" 200 30
+::1 - - [12/Nov/2022:14:28:43 +0000] "GET /mat HTTP/1.1" 403 31
+::1 - - [12/Nov/2022:14:28:50 +0000] "POST /user/login HTTP/1.1" 404 55
+::1 - - [12/Nov/2022:14:29:03 +0000] "POST /user/register HTTP/1.1" 409 49
+::1 - - [12/Nov/2022:14:30:32 +0000] "POST /user/register HTTP/1.1" 409 57
+::1 - - [12/Nov/2022:14:30:38 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:14:30:42 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:14:30:45 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:14:30:49 +0000] "DELETE /user/logout HTTP/1.1" 200 30
+::1 - - [12/Nov/2022:14:32:24 +0000] "POST /user/register HTTP/1.1" 409 57
+::1 - - [12/Nov/2022:14:32:30 +0000] "GET /user/unahur HTTP/1.1" 200 95
+::1 - - [12/Nov/2022:14:32:33 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:14:59:26 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+SyntaxError: Unexpected token / in JSON at position 48
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::1 - - [12/Nov/2022:14:59:43 +0000] "POST /user/login HTTP/1.1" 400 919
+::1 - - [12/Nov/2022:15:00:11 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:15:00:20 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:15:00:33 +0000] "DELETE /user/logout HTTP/1.1" 200 30
+::1 - - [12/Nov/2022:15:00:38 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:15:07:02 +0000] "POST /user/register HTTP/1.1" 409 57
+::1 - - [12/Nov/2022:15:07:06 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:15:11:19 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:15:17:07 +0000] "POST /user/login HTTP/1.1" 401 34
+::1 - - [12/Nov/2022:15:17:17 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:15:17:27 +0000] "POST /user/login HTTP/1.1" 404 55
+::1 - - [12/Nov/2022:17:23:00 +0000] "GET /car HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:17:23:06 +0000] "POST /user/login HTTP/1.1" 404 55
+::1 - - [12/Nov/2022:17:23:14 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:17:23:18 +0000] "GET /car HTTP/1.1" 200 171
+::1 - - [12/Nov/2022:17:24:09 +0000] "GET /alu HTTP/1.1" 200 235
+::1 - - [12/Nov/2022:17:25:02 +0000] "GET /prof HTTP/1.1" 200 105
+::1 - - [12/Nov/2022:17:25:26 +0000] "GET /profmat HTTP/1.1" 200 89
+::1 - - [12/Nov/2022:17:25:55 +0000] "GET /mat HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:17:27:50 +0000] "GET /alu HTTP/1.1" 200 235
+::1 - - [12/Nov/2022:17:28:24 +0000] "GET /alu?page=2&size=1 HTTP/1.1" 200 128
+::1 - - [12/Nov/2022:17:29:52 +0000] "GET /car HTTP/1.1" 403 30
+::1 - - [12/Nov/2022:17:29:59 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:17:30:05 +0000] "GET /car HTTP/1.1" 200 171
+::1 - - [12/Nov/2022:17:30:21 +0000] "GET /car?page=2&size=2 HTTP/1.1" 200 90
+::1 - - [12/Nov/2022:17:31:26 +0000] "GET /mat HTTP/1.1" 200 593
+::1 - - [12/Nov/2022:17:31:44 +0000] "GET /mat?page=2&size=2 HTTP/1.1" 200 267
+::1 - - [12/Nov/2022:17:32:18 +0000] "GET /profmat HTTP/1.1" 200 89
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:17:37:53 +0000] "POST /users/login HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:17:37:54 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:37:54 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:37:55 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:17:37:55 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:37:55 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:37:55 +0000] "GET /alu HTTP/1.1" 200 127
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:17:39:03 +0000] "POST /users/login HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:04 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:04 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:04 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:04 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:04 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:04 +0000] "GET /alu HTTP/1.1" 200 127
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:57:14)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:17:39:27 +0000] "POST /users/login HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:28 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:28 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:28 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:28 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:28 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:39:28 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:35 +0000] "POST /user/login HTTP/1.1" 404 55
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:36 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:36 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:36 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:36 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:36 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:42:36 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:24 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:25 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:17:45:50 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:17:48:09 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:48:10 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:48:40 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:48:40 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:48:59 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:48:59 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:49:33 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:49:33 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:50:05 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:50:05 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:51:43 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:51:43 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:53:46 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:53:47 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:54:06 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:54:06 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:54:27 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:54:27 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:54:52 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:54:52 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:55:15 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:55:15 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:56:04 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:56:04 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:56:27 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:56:27 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:17:58:06 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:17:58:06 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:00:17 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:00:17 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:01:05 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:01:05 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:01:41 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:01:41 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:01:59 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:01:59 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:02:38 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:02:38 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:04:12 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:04:12 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:04:12 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:04:12 +0000] "POST /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:04:12 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:06:58 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:06:58 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:06:58 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:06:58 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:06:59 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:07:45 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:07:46 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:07:46 +0000] "POST /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:07:46 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:07:46 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:08 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:08 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:08 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:09 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:09 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:43 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:43 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:43 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:43 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:43 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:55 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:55 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:55 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:55 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:09:55 +0000] "POST /alu HTTP/1.1" 201 61
+::1 - - [12/Nov/2022:18:10:52 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:18:10:57 +0000] "GET /mat?page=2&size=2 HTTP/1.1" 200 267
+::1 - - [12/Nov/2022:18:11:02 +0000] "GET /mat?page=1&size=2 HTTP/1.1" 200 240
+::1 - - [12/Nov/2022:18:11:12 +0000] "GET /car?page=1&size=2 HTTP/1.1" 200 68
+::1 - - [12/Nov/2022:18:11:34 +0000] "GET /car?page=1&size=2 HTTP/1.1" 200 68
+::ffff:127.0.0.1 - - [12/Nov/2022:18:12:01 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:12:01 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:12:01 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:12:01 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:12:01 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:14:50 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:14:51 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:14:51 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:15:18 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:15:18 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:15:18 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:15:18 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:15:18 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:41 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:41 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:41 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:41 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:41 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:42 +0000] "GET /car HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:42 +0000] "GET /mat HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:16:42 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:20 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:21 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:43 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:17:44 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:10 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:18:11 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "POST /alu HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:19:26 +0000] "GET /alu HTTP/1.1" 403 31
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:30 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:20:31 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "POST /prof HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:22:12 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "POST /prof HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:25:03 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:03 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:03 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:03 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:03 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:03 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:03 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:29:04 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:04 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:04 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:04 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:04 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:29:04 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:41 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:41 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:41 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:41 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:42 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:42 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:39:42 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:42 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:43 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:43 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:43 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:39:43 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:47 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:47 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:47 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:47 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:47 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:47 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:43:48 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:48 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:48 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:48 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:48 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:43:48 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:54 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:54 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:54 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:54 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:54 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:54 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:44:55 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:55 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:55 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:55 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:55 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:44:55 +0000] "GET /profmat HTTP/1.1" 200 103
+::1 - - [12/Nov/2022:18:46:37 +0000] "POST /user/register HTTP/1.1" 409 57
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:04 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:05 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:06 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:06 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:06 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:06 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:50 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:50 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:50 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:50 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:50 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:50 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:48:51 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:51 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:51 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:51 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:51 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:48:51 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:04 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:04 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:04 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:04 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:04 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:05 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:39 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:39 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:39 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:39 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:39 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:39 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:50:40 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:40 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:40 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:40 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:40 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:50:40 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:16 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:16 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:16 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:16 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:16 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:16 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:51:17 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:17 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:17 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:17 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:17 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:17 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:51:37 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:38 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:38 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:38 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:38 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:51:38 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:05 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:05 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:06 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:07 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:07 +0000] "GET /profmat HTTP/1.1" 200 103
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:16 +0000] "POST /user/register HTTP/1.1" 201 102
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:16 +0000] "POST /user/login HTTP/1.1" 200 28
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:16 +0000] "POST /car HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:16 +0000] "POST /mat HTTP/1.1" 201 8
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "POST /alu HTTP/1.1" 201 61
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "POST /prof HTTP/1.1" 201 8
+NotFoundError: Not Found
+    at createError (C:\Users\poriglia\entrega\api\app.js:56:8)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:635:15
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at next (C:\Users\poriglia\entrega\api\utils\token.utils.js:21:7)
+    at C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:223:12
+    at getSecret (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.<anonymous>.module.exports [as verify] (C:\Users\poriglia\entrega\api\node_modules\jsonwebtoken\verify.js:94:10)
+    at verify (C:\Users\poriglia\entrega\api\utils\token.utils.js:16:20)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at serveStatic (C:\Users\poriglia\entrega\api\node_modules\serve-static\index.js:75:16)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at cookieParser (C:\Users\poriglia\entrega\api\node_modules\cookie-parser\index.js:71:5)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at urlencodedParser (C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\types\urlencoded.js:82:7)
+    at Layer.handle [as handle_request] (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\poriglia\entrega\api\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\poriglia\entrega\api\node_modules\body-parser\lib\read.js:130:5
+    at invokeCallback (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:224:16)
+    at done (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (C:\Users\poriglia\entrega\api\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (node:events:525:35)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "POST /profmat HTTP/1.1" 404 160
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "GET /car HTTP/1.1" 200 82
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "GET /mat HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "GET /alu HTTP/1.1" 200 127
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "GET /prof HTTP/1.1" 200 142
+::ffff:127.0.0.1 - - [12/Nov/2022:18:52:17 +0000] "GET /profmat HTTP/1.1" 200 103
+::1 - - [12/Nov/2022:18:56:42 +0000] "POST /user/register HTTP/1.1" 409 57
+::1 - - [12/Nov/2022:18:56:48 +0000] "GET /user/poriglia HTTP/1.1" 200 97
+::1 - - [12/Nov/2022:18:56:53 +0000] "POST /user/login HTTP/1.1" 200 28
+::1 - - [12/Nov/2022:18:56:59 +0000] "GET /mat?page=1&size=2 HTTP/1.1" 200 240
+::1 - - [12/Nov/2022:18:57:08 +0000] "GET /profmat HTTP/1.1" 200 89
+::1 - - [12/Nov/2022:18:57:13 +0000] "GET /alu?page=2&size=1 HTTP/1.1" 200 128
+::1 - - [12/Nov/2022:18:57:16 +0000] "GET /car?page=1&size=2 HTTP/1.1" 200 68
+::1 - - [12/Nov/2022:18:57:20 +0000] "DELETE /user/logout HTTP/1.1" 200 29
+::1 - - [12/Nov/2022:18:57:24 +0000] "GET /profmat HTTP/1.1" 403 31

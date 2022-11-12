@@ -17,14 +17,14 @@ var alumnosRouter = require('./routes/alumnos');
 var profesoresRouter = require('./routes/profesores');
 var profesoresmateriasRouter = require('./routes/profesoresmaterias');
 
-var app = express();
+const app = express();
 ////// https://medium.com/@HargitaiSoma/how-to-do-logging-in-an-express-api-part-1-14991856555
 /////  https://ayuda.guebs.com/como-escribir-a-un-log-el-registro-de-tu-aplicacion-nodejs/
 /////  Configuración para Morgan y creación del stream node.log
-var fs = require('fs');
+const fs = require('fs');
 //var util = require('util');
-var log_file = fs.createWriteStream(__dirname + '/logs/api-http.log', { flags: 'a' });
-app.use(logger('common', { stream: log_file }));
+const logHttp = fs.createWriteStream(__dirname + '/logs/api-http.log', { flags: 'a' });
+app.use(logger('common', { stream: logHttp }));
 /////
 
 // helps you secure your Express apps by setting various HTTP headers
@@ -37,14 +37,16 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// para poder leer y escribir cookies del cliente.
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/car', tokenUtil.validateToken, carrerasRouter);
-app.use('/mat', materiasRouter);
-app.use('/alu', alumnosRouter);
-app.use('/prof', profesoresRouter);
-app.use('/profmat', profesoresmateriasRouter);
+app.use('/car', tokenUtil.authorization, carrerasRouter);
+app.use('/mat', tokenUtil.authorization, materiasRouter);
+app.use('/alu', tokenUtil.authorization, alumnosRouter);
+app.use('/prof', tokenUtil.authorization, profesoresRouter);
+app.use('/profmat', tokenUtil.authorization, profesoresmateriasRouter);
 
 // Crear usuario
 app.use('/user', usersRouter);
@@ -60,10 +62,7 @@ app.use(function (err, req, res, next) {
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  /////  Configuración para Morgan y creación del stream node.log
-  ///// Escribimos el error
-  log_file.write(err.stack);
-  /////
+  logHttp.write(err.stack);
 
   // render the error page
   res.status(err.status || 500);

@@ -8,13 +8,13 @@ const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
-const logStream = fs.createWriteStream('./logs/api-sql.log', { flags: 'a' });
+const logSql = fs.createWriteStream('./logs/api-sql.log', { flags: 'a' });
 
 const logHandler = (msg) => {
   // Se mantiene el comportamiento por defecto
   console.log(msg);
   // Se redirecciona el flujo de datos al archivo correspondiente, con el agregado del timestamp.
-  logStream.write('[' + new Date().toUTCString() + '] ' + msg + '\n');
+  logSql.write('[' + new Date().toUTCString() + '] ' + msg + '\n');
 };
 
 // Se agrega la configuracion logging nueva a los parámeteros de confirguración del Sequelize.
