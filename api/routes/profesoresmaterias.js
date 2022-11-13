@@ -59,6 +59,23 @@ router.get('/:id', (req, res) => {
   });
 });
 
+router.post('/', (req, res) => {
+  models.profesor_materia
+    .create({
+      id_profesor: req.body.id_profesor,
+      id_materia: req.body.id_materia,
+    })
+    .then((profesormateria) => res.status(201).send({ id: profesormateria.id }))
+    .catch((error) => {
+      if (error == 'SequelizeUniqueConstraintError: Validation error') {
+        res.status(400).send('Bad request: existe otro registro con los mismos datos');
+      } else {
+        console.log(`Error al intentar insertar en la base de datos: ${error}`);
+        res.sendStatus(500);
+      }
+    });
+});
+
 router.put('/:id', (req, res) => {
   const onSuccess = (profesormateria) =>
     profesormateria

@@ -73,6 +73,26 @@ let datoProfesorMateria = {
   id_materia: 1,
 };
 
+let datoProfesorMateria02 = {
+  id_profesor: 2,
+  id_materia: 2,
+};
+
+let datoProfesorMateria03 = {
+  id_profesor: 3,
+  id_materia: 3,
+};
+
+let datoProfesorMateria04 = {
+  id_profesor: 4,
+  id_materia: 4,
+};
+
+let datoProfesorMateria05 = {
+  id_profesor: 4,
+  id_materia: 5,
+};
+
 let validUser = {
   name: 'unahur',
   password: 'UNaHur1234',
@@ -129,15 +149,16 @@ describe('Test básicos de los métodos POST', () => {
     expect(res.header['content-type']).toBe('application/json; charset=utf-8');
     expect(res.statusCode).toBe(201);
   });
-
+  /*
   test('respuesta a /profmat', async () => {
     const res = await request(app).post('/profmat').set('Cookie', cookies).send(datoProfesorMateria);
-    expect(res.header['content-type']).toBe('text/html; charset=utf-8');
-    expect(res.statusCode).toBe(404);
+    expect(res.header['content-type']).toBe('application/json; charset=utf-8');
+    expect(res.statusCode).toBe(201);
   });
+  */
 });
 
-describe('Test básicos de los metodos GET', function () {
+describe('Test básicos de los métodos GET', function () {
   test('respuesta a /car', async () => {
     const res = await request(app).get('/car').set('Cookie', cookies);
     // TODO: Agregar el JWT para completar apropiadamente el test.
@@ -166,13 +187,29 @@ describe('Test básicos de los metodos GET', function () {
     expect(res.statusCode).toBe(200);
     expect(res.body).toMatchObject({ count: 1, rows: [datoProfesor] });
   });
+});
 
-  test('respuesta a /profmat', async () => {
-    res_prof = await request(app).get('/prof').set('Cookie', cookies);
-    res_mat = await request(app).get('/mat').set('Cookie', cookies);
+describe('Test compuestos para tabla ProfesorMateria', function () {
+  test('respuesta a POST /profmat', async () => {
+    const res = await request(app).post('/profmat').set('Cookie', cookies).send(datoProfesorMateria);
+    expect(res.header['content-type']).toBe('application/json; charset=utf-8');
+    expect(res.statusCode).toBe(201);
+  });
 
-    console.log(res_prof);
-    console.log(res_mat);
+  test('respuesta a GET /profmat', async () => {
+    var res_prof = await request(app).post('/prof').set('Cookie', cookies).send(datoProfesor02);
+    res_prof = await request(app).post('/prof').set('Cookie', cookies).send(datoProfesor03);
+    res_prof = await request(app).post('/prof').set('Cookie', cookies).send(datoProfesor04);
+
+    var res_mat = await request(app).post('/mat').set('Cookie', cookies).send(datoMateria02);
+    res_mat = await request(app).post('/mat').set('Cookie', cookies).send(datoMateria03);
+    res_mat = await request(app).post('/mat').set('Cookie', cookies).send(datoMateria04);
+    res_mat = await request(app).post('/mat').set('Cookie', cookies).send(datoMateria05);
+
+    var res_profmat = await request(app).post('/profmat').set('Cookie', cookies).send(datoProfesorMateria02);
+    res_profmat = await request(app).post('/profmat').set('Cookie', cookies).send(datoProfesorMateria03);
+    res_profmat = await request(app).post('/profmat').set('Cookie', cookies).send(datoProfesorMateria04);
+    res_profmat = await request(app).post('/profmat').set('Cookie', cookies).send(datoProfesorMateria05);
 
     const res = await request(app).get('/profmat').set('Cookie', cookies);
     expect(res.header['content-type']).toBe('application/json; charset=utf-8');
@@ -181,5 +218,15 @@ describe('Test básicos de los metodos GET', function () {
 
     //expect(res.body.rows).objectContaining({ count: 1, rows: [datoProfesorMateria] });
     //expect(res.body).toEqual(expect.objectContaining(datoProfesorMateria));
+  });
+});
+
+describe('Test básicos de los métodos DELETE', () => {
+  test('respuesta a /user/logout', async () => {
+    const res = await request(app).delete('/user/logout').set('Cookie', cookies).send(validUser);
+
+    expect(res.header['content-type']).toBe('application/json; charset=utf-8');
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toMatchObject({ message: 'Logout exitoso!' });
   });
 });
