@@ -5,9 +5,39 @@ const { sequelize } = require('../models');
 let datoCarrera = {
   nombre: 'Tecnicatura Universitaria en Informática',
 };
+
+let datoCarrera02 = {
+  nombre: 'Licenciatura en Informática',
+};
+
+let datoCarrera03 = {
+  nombre: 'Ingeniería Eléctrica',
+};
+
+let datoCarrera04 = {
+  nombre: 'Ingeniería Metalúrgica',
+};
+
+let datoCarrera05 = {
+  nombre: 'Licenciatura en Diseño Industrial',
+};
+
 let datoMateria = {
   nombre: 'Programación 1',
 };
+let datoMateria02 = {
+  nombre: 'Matemática 1',
+};
+let datoMateria03 = {
+  nombre: 'Matematica 2',
+};
+let datoMateria04 = {
+  nombre: 'Introducción al diseño',
+};
+let datoMateria05 = {
+  nombre: 'Aleaciones 1',
+};
+
 let datoAlumno = {
   apellido: 'Origlia',
   nombre: 'Pablo',
@@ -18,6 +48,24 @@ let datoProfesor = {
   apellido: 'Marcelli',
   nombre: 'Pablo',
   dni: 14352333,
+};
+
+let datoProfesor02 = {
+  apellido: 'Sanchez',
+  nombre: 'Roberto',
+  dni: 33987456,
+};
+
+let datoProfesor03 = {
+  apellido: 'Robles',
+  nombre: 'Alberto',
+  dni: 35947416,
+};
+
+let datoProfesor04 = {
+  apellido: 'Rojo',
+  nombre: 'Nicolas',
+  dni: 26974561,
 };
 
 let datoProfesorMateria = {
@@ -120,6 +168,12 @@ describe('Test básicos de los metodos GET', function () {
   });
 
   test('respuesta a /profmat', async () => {
+    res_prof = await request(app).get('/prof').set('Cookie', cookies);
+    res_mat = await request(app).get('/mat').set('Cookie', cookies);
+
+    console.log(res_prof);
+    console.log(res_mat);
+
     const res = await request(app).get('/profmat').set('Cookie', cookies);
     expect(res.header['content-type']).toBe('application/json; charset=utf-8');
     expect(res.statusCode).toBe(200);
