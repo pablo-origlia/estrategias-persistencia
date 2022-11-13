@@ -41,7 +41,6 @@ router.post('/', (req, res) => {
       dni: req.body.dni,
     })
     .then((profesor) => {
-      models.profesor_materia.create({ id_profesor: profesor.id, id_materia: req.body.id_materia });
       res.status(201).send({ id: profesor.id });
     })
     .catch((error) => {
