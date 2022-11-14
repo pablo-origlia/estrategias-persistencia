@@ -1,4 +1,8 @@
 node_modules
 /api/logs/api-http.log
 /api/logs/api-sql.log
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 9759588ae95b3acbce19e2395dbe05cae3d30f05
