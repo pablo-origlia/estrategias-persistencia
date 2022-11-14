@@ -38,21 +38,78 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.post('/', (req, res) => {
+
+router.get('/all', (req, res, next) => {
   models.materia
-    .create({
-      nombre: req.body.nombre,
-      id_carrera: req.body.id_carrera,
+    .findAll({
+      attributes: ['id','nombre','id_carrera'],
+      order: [['id', 'ASC']],
     })
-    .then((materia) => res.status(201).send({ id: materia.id }))
+    .then((materia) => res.send(materia))
     .catch((error) => {
-      if (error == 'SequelizeUniqueConstraintError: Validation error') {
-        res.status(400).send('Bad request: existe otra materia con el mismo nombre');
-      } else {
-        console.log(`Error al intentar insertar en la base de datos: ${error}`);
-        res.sendStatus(500);
-      }
+      return next(error);
     });
+});
+
+
+const findMateriaNombre = (nombre, { onSuccess, onNotFound, onError }) => {
+  models.materia
+    .findOne({
+      attributes: ['id', 'nombre','id_carrera'],
+      where: {nombre}
+    })
+    .then((materia) => (materia ? onSuccess(materia) : onNotFound()))
+    .catch(() => onError());
+};
+
+router.post('/', (req, res) => {
+  const nombre= req.body.nombre;
+  findMateriaNombre(nombre,{
+    onSuccess: (materia) => {
+      res.status(409).send('Bad request: Existe otra materia con el mismo nombre');
+    },
+    onError: () => res.sendStatus(500),
+    onNotFound: () => {
+      models.materia
+        .create({
+          nombre: req.body.nombre,
+          id_carrera: req.body.id_carrera,
+        })
+        .then((materia) => res.status(201).send({ id: materia.id }))
+        .catch((error) => {
+          if (error == 'SequelizeUniqueConstraintError: Validation error') {
+            res.status(400).send('Bad request: existe otra materia con el mismo nombre');
+          } else {
+            console.log(`Error al intentar insertar en la base de datos: ${error}`);
+            res.sendStatus(500);
+          }
+        });
+      },
+    }); 
+});
+
+
+const findMateriaContieneNombre = (nombre, { onSuccess, onNotFound, onError }) => {
+  const { Op } = require("sequelize");
+  models.materia
+    .findAll({
+      attributes: ['id', 'nombre','id_carrera'],
+      where: {
+        nombre: {
+          [Op.substring]: nombre
+        }
+      }
+    })
+    .then((materia) => (materia ? onSuccess(materia) : onNotFound()))
+    .catch(() => onError());
+};
+
+router.get('/search/:nombre', (req, res) => {
+  findMateriaContieneNombre(req.params.nombre, {
+    onSuccess: (materia) => res.send(materia),
+    onNotFound: () => res.sendStatus(404),
+    onError: () => res.sendStatus(500),
+  });
 });
 
 const findMateria = (id, { onSuccess, onNotFound, onError }) => {

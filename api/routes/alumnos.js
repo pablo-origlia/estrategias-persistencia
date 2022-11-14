@@ -29,13 +29,6 @@ router.get('/all', (req, res, next) => {
   models.alumno
     .findAll({
       attributes: ['id', 'apellido', 'nombre', 'dni', 'id_carrera'],
-      include: [
-        {
-          as: 'Carrera-Relacionada',
-          model: models.carrera,
-          attributes: ['id', 'nombre'],
-        },
-      ],
       order: [['id', 'ASC']],
     })
     .then((alumnos) => res.send(alumnos))
