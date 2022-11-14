@@ -1,6 +1,6 @@
 node_modules
-/api/logs/api-http.log
-/api/logs/api-sql.log
+api-http.log
+api-sql.log
 <<<<<<< HEAD
 .env
 =======
