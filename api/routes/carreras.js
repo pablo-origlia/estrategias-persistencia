@@ -16,19 +16,76 @@ router.get('/', (req, res) => {
     .catch(() => res.sendStatus(500));
 });
 
-router.post('/', (req, res) => {
+const findCarreraNombre = (nombre, { onSuccess, onNotFound, onError }) => {
   models.carrera
-    .create({ nombre: req.body.nombre })
-    .then((carrera) => res.status(201).send({ id: carrera.id }))
-    .catch((error) => {
-      if (error == 'SequelizeUniqueConstraintError: Validation error') {
-        res.status(400).send('Bad request: existe otra carrera con el mismo nombre');
-      } else {
-        console.log(`Error al intentar insertar en la base de datos: ${error}`);
-        res.sendStatus(500);
+    .findOne({
+      attributes: ['id', 'nombre'],
+      where: { nombre },
+    })
+    .then((carrera) => (carrera ? onSuccess(carrera) : onNotFound()))
+    .catch(() => onError());
+};
+
+const findCarreraContieneNombre = (nombre, { onSuccess, onNotFound, onError }) => {
+  const { Op } = require("sequelize");
+  models.carrera
+    .findAll({
+      attributes: ['id', 'nombre'],
+      where: {
+        nombre: {
+          [Op.substring]: nombre
+        }
       }
+    })
+    .then((carrera) => (carrera ? onSuccess(carrera) : onNotFound()))
+    .catch(() => onError());
+};
+
+
+router.get('/search/:nombre', (req, res) => {
+  findCarreraContieneNombre(req.params.nombre, {
+    onSuccess: (carrera) => res.send(carrera),
+    onNotFound: () => res.sendStatus(404),
+    onError: () => res.sendStatus(500),
+  });
+});
+
+router.get('/all', (req, res, next) => {
+  models.carrera
+    .findAll({
+      attributes: ['id','nombre'],
+      order: [['id', 'ASC']],
+    })
+    .then((carrera) => res.send(carrera))
+    .catch((error) => {
+      return next(error);
     });
 });
+
+
+router.post('/', (req, res) => {
+  const nombre = req.body.nombre;
+  findCarreraNombre(nombre,{
+    onSuccess: (carrera) => {
+      res.status(409).send('Bad request: Existe otra carrera con el mismo nombre');
+    },
+    onError: () => res.sendStatus(500),
+    onNotFound: () => {
+      models.carrera
+        .create({ nombre: nombre })
+        .then((carrera) => res.status(201).send({ id: carrera.id }))
+        .catch((error) => {
+          if (error == 'SequelizeUniqueConstraintError: Validation error') {
+            res.status(400).send('Bad request: existe otra carrera con el mismo nombre');
+          } else {
+            console.log(`Error al intentar insertar en la base de datos: ${error}`);
+            res.sendStatus(500);
+          }
+      });
+    },
+  }); 
+});
+
 
 const findCarrera = (id, { onSuccess, onNotFound, onError }) => {
   models.carrera
