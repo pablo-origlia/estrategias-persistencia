@@ -1,3 +1,4 @@
 node_modules
-logs
+/api/logs/api-http.log
+/api/logs/api-sql.log
 .env
