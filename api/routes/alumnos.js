@@ -25,6 +25,35 @@ router.get('/', (req, res, next) => {
     });
 });
 
+router.get('/all', (req, res, next) => {
+  models.alumno
+    .findAll({
+      attributes: ['id', 'apellido', 'nombre', 'dni', 'id_carrera'],
+      include: [
+        {
+          as: 'Carrera-Relacionada',
+          model: models.carrera,
+          attributes: ['id', 'nombre'],
+        },
+      ],
+      order: [['id', 'ASC']],
+    })
+    .then((alumnos) => res.send(alumnos))
+    .catch((error) => {
+      return next(error);
+    });
+});
+
+
+router.get('/search/:dni', (req, res) => {
+  findAlumnoDni(req.params.dni, {
+    onSuccess: (alumno) => res.send(alumno),
+    onNotFound: () => res.sendStatus(404),
+    onError: () => res.sendStatus(500),
+  });
+});
+
+
 const findAlumnoDni = (dni, { onSuccess, onNotFound, onError }) => {
   models.alumno
     .findOne({
@@ -34,6 +63,7 @@ const findAlumnoDni = (dni, { onSuccess, onNotFound, onError }) => {
     .then((alumno) => (alumno ? onSuccess(alumno) : onNotFound()))
     .catch(() => onError());
 };
+
 
 router.post('/', (req, res) => {
   const nombre = req.body.nombre;
@@ -85,6 +115,7 @@ router.get('/:id', (req, res) => {
   });
 });
 
+
 router.put('/:id', (req, res) => {
   const onSuccess = (alumno) =>
     alumno
@@ -112,6 +143,7 @@ router.put('/:id', (req, res) => {
     onError: () => res.sendStatus(500),
   });
 });
+
 
 router.delete('/:id', (req, res) => {
   const onSuccess = (alumno) =>
