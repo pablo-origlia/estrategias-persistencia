@@ -33,25 +33,69 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.post('/', (req, res) => {
-  const profesores = models.profesor
-    .create({
-      nombre: req.body.nombre,
-      apellido: req.body.apellido,
-      dni: req.body.dni,
+
+router.get('/search/:dni', (req, res) => {
+  findProfesorDni(req.params.dni, {
+    onSuccess: (profesor) => res.send(profesor),
+    onNotFound: () => res.sendStatus(404),
+    onError: () => res.sendStatus(500),
+  });
+});
+
+
+const findProfesorDni = (dni, { onSuccess, onNotFound, onError }) => {
+  models.profesor
+    .findOne({
+      attributes: ['id', 'apellido', 'nombre', 'dni'],
+      where: { dni },
     })
-    .then((profesor) => {
-      res.status(201).send({ id: profesor.id });
+    .then((profesor) => (profesor ? onSuccess(profesor) : onNotFound()))
+    .catch(() => onError());
+};
+
+router.get('/all', (req, res, next) => {
+  models.profesor
+    .findAll({
+      attributes: ['id', 'apellido', 'nombre', 'dni'],
+      order: [['id', 'ASC']],
     })
+    .then((profesor) => res.send(profesor))
     .catch((error) => {
-      if (error == 'SequelizeUniqueConstraintError: Validation error') {
-        res.status(400).send('Bad request: existe otro profesor con el mismo id');
-      } else {
-        console.log(`Error al intentar insertar en la base de datos: ${error}`);
-        res.sendStatus(500);
-      }
+      return next(error);
     });
 });
+
+router.post('/', (req, res) => {
+  const nombre = req.body.nombre;
+  const apellido = req.body.apellido;
+  const dni = req.body.dni;
+
+  findProfesorDni(dni, {
+    onSuccess: (profesor) => {
+      res.status(409).send('Bad request: Existe otro profesor con el mismo dni');
+    },
+    onError: () => res.sendStatus(500),
+    onNotFound: () => {
+      models.profesor
+        .create({
+          nombre: req.body.nombre,
+          apellido: req.body.apellido,
+          dni: req.body.dni,
+        })
+        .then((profesor) => {
+          res.status(201).send({ id: profesor.id });
+        })
+        .catch((error) => {
+          if (error == 'SequelizeUniqueConstraintError: Validation error') {
+            res.status(400).send('Bad request: existe otro profesor con el mismo id');
+          } else {
+            console.log(`Error al intentar insertar en la base de datos: ${error}`);
+            res.sendStatus(500);
+          }
+        });
+      },
+    });
+  });
 
 const findProfesor = (id, { onSuccess, onNotFound, onError }) => {
   models.profesor
